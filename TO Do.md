@@ -1,21 +1,32 @@
 Chemie:
-- [ ]  Ameldung VL
+- [x]  Ameldung VL
 - [ ]  ggf. Anmeldung TU
 
 BuS:
-- [ ] BuS Anmeldung Tutorium (Email)
+- [ ]  BuS Anmeldung Tutorium (Email)
 
 DB:
-- [ ] Anmeldung VL
-- [ ] ggf. Anmeldung TU
-- [ ] Anmeldung Übung 1/2
+- [x]  Anmeldung VL
+- [ ]  ggf. Anmeldung TU
+- [ ]  Anmeldung Übung 1/2
 
 Stocha:
-- [ ]  Anmeldung VL
-- [ ] Anmeldung UE
-- [ ] Anemldung TU
+- [x]  Anmeldung VL
+- [ ]  Anmeldung UE
+- [ ]  Anemldung TU
 
 Eingebettet Systeme:
-- [ ]  Anmeldung VL
+- [x]  Anmeldung VL
 
 FoSAP:
+- [x]  Anmeldung VL
+- [ ]  Anmeldung TU
+
+MaLo:
+- [x]  Anmeldung VL
+- [ ]  Anmeldung TU
+- [ ]  Anmeldung Gruppen
+
+Social Networks:
+- [x]  Anmeldung VL
+- [ ]  Anmeldung UE
