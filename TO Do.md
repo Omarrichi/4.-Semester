@@ -12,8 +12,8 @@ DB:
 
 Stocha:
 - [x]  Anmeldung VL
-- [ ]  Anmeldung UE
-- [ ]  Anemldung TU
+- [x]  Anmeldung UE
+- [x]  Anemldung TU
 
 Eingebettet Systeme:
 - [x]  Anmeldung VL
