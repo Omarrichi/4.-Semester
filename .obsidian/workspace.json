@@ -8,31 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2f0e15ed7799438c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TO Do.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "fd2c0184acf8d9c6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Untitled.md"
-              }
+              "state": {}
             }
           },
           {
@@ -170,10 +149,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd2c0184acf8d9c6",
+  "active": "db3700357beff315",
   "lastOpenFiles": [
+    "Abgaben Tracker.md",
     "TO Do.md",
-    "Untitled.md",
     "Organische Chemie/1..md",
     "Social Networks",
     "MaLo",
