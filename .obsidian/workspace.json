@@ -18,8 +18,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "fd2c0184acf8d9c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TO Do.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TO Do.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TO Do.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -157,11 +170,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2f0e15ed7799438c",
+  "active": "fd2c0184acf8d9c6",
   "lastOpenFiles": [
+    "TO Do.md",
+    "Untitled.md",
     "Organische Chemie/1..md",
     "Social Networks",
-    "TO Do.md",
     "MaLo",
     "FoSAP",
     "Eingebettete Systeme",

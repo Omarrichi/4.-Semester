@@ -1,0 +1,1 @@
+$\bigwedge^{n}_{i=1} \phi_i$
