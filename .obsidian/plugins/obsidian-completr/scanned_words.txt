@@ -2,6 +2,7 @@ Chemie
 Ameldung
 Anmeldung
 Anemldung
+Abgabe
 VL
 ggf
 TU
@@ -10,7 +11,9 @@ BuS
 Email
 Eingebettet
 DB
+Dbis
 Übung
+ÜB
 Stocha
 Systeme
 Social
@@ -19,3 +22,6 @@ FoSAP
 MaLo
 Gruppen
 Networks
+every
+week
+Quiz
