@@ -1,5 +1,6 @@
 **MaLo**
-- [ ] Abgabe ÜB 🔁 every week 📅 2023-04-18
+- [ ] Abgabe ÜB 🔁 every week 📅 2023-04-25
+- [x] Abgabe ÜB 🔁 every week 📅 2023-04-18 ✅ 2023-04-17
 - [ ] Quiz 🔁 every week 📅 2023-04-25
 - [x] Quiz 🔁 every week 📅 2023-04-18 ✅ 2023-04-16
 
