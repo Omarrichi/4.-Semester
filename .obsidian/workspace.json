@@ -18,8 +18,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "86c501c8abfebe60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BuS/Tut 1.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Abgaben Tracker.md",
+                "file": "BuS/Tut 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Abgaben Tracker.md",
+                "file": "BuS/Tut 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Abgaben Tracker.md"
+                "file": "BuS/Tut 1.md"
               }
             }
           },
@@ -157,10 +170,11 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "fd2c0184acf8d9c6",
+  "active": "86c501c8abfebe60",
   "lastOpenFiles": [
-    "TO Do.md",
     "Abgaben Tracker.md",
+    "BuS/Tut 1.md",
+    "TO Do.md",
     "Organische Chemie/1..md",
     "Social Networks",
     "MaLo",
