@@ -52,4 +52,21 @@ Vorwissen:
 - Dabei wird die Kontrolle vom Programm an den Kernel übergeben.
 - Was ist ein Filedescriptor:
 	- Nach dem öffnen einer Datei, wird ein Filedescriptor zurückgegeben.
-	- Dieser repräsentiert die geöffnete Da
+	- Dieser repräsentiert die geöffnete Datei
+	- Der Inhalt der Datei ist dann in dem FD gespeichert
+	- Jede geöffnete Datei bekommt einen FD
+		- bei 10 geöffneten Datein wird man dann 10 FDen haben
+
+---
+
+**Lösung:**
+- read: liest Bytes von einem Filedescriptor
+- write: schreibt Bytes in einen Filedescriptor
+- open: öffnet eine Datei und gibt einen Filedescriptor zurück
+- close: schlieÿt einen Filedescriptor
+- fork: erzeugt einen neuen Prozess als Kopie des aufrufenden
+
+Allgemein zur Fork:
+- Fork erzeugt einen Kopieprozess aus einem Vaterprozess, beide Prozess sind zunächst identisch. Die Kopie wird Kindprozess genannt und originale Prozess ist dann Vaterprozess.
+- Wir wissen aus der Vorlesung, dass jeder Prozess einen eindeutigen PID enthält, damit können wir auch zwischen Vater- und Kindprozess, wichtig ist nun, der Vater behält seine PID aber das Kindprozess bekommt 0 als PID. (Dadurch kann man mit einer IF-Bedingung, Kind bzw. Vater spezifischer Code schreiben).
+(Im Übungsblatt findet ihr mehr dazu (: )
