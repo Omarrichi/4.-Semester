@@ -162,3 +162,82 @@ int main() {
 - Kind- und Vaterprozess drucken dann die globale Variabele "doppelt"
 - Nach dem Erstellen von dem Kindprozess bekommt er seinen eigenen Zufallszahlengenerator, damit nicht beide Prozesse den gleichen Zufallswert ziehen
 - Wenn die globale Variable den Wert 26 erreicht, werden die Ausgaben von Vater und Sohn nicht mehr alternierend, da die Wartezeit nicht mehr für beide Konstant ist, sondern ein einem Interval liegt (100ms bis 500ms).
+
+---
+
+**b)** Erweitern Sie das Programm aus a) mit folgender Funktionalität:
+ - Die Prozesse sollen beim Ausdrucken der Variable auch angeben, wer die Ausgabe vornimmt: "Kind: 15", "Vater: 16", ...
+ - Ist ein Prozess fertig, meldet er sich zu Wort mit "Vater: Ich bin fertig!" oder "Kind: Ich bin fertig!"
+ - Ist der Vater zuerst fertig, dann wartet er, bis sein Kind fertig ist, und beendet erst dann seine Ausführung. Belegen Sie die Korrektheit ihres Programms mit entsprechenden Ausgaben _(c.3)_.
+ - Modifizieren Sie nun die vorangehende Funktionalität: Ist der Vater zuerst fertig, soll er nicht mehr auf sein Kind warten, sondern es stattdessen "töten". Das Kind soll sich anschließend vorzeitig mit einem Abschied beenden _(c.4)_.
+
+```c
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <signal.h>
+#include <time.h>
+
+#define TRUE 1
+#define FALSE 0
+
+void stirb(int signal) {
+  printf("Sohn: Ich wurde getoetet!\n");
+  printf("Sohn: Ende!\n");
+  exit(-1);
+}
+
+int globalvariable;
+
+int main() {
+
+  (void)signal(SIGTERM, stirb); 
+
+  pid_t pid = getpid();
+  for (globalvariable = 1; globalvariable <= 50; globalvariable++)
+  {
+    if (globalvariable == 9) {
+      pid = fork();
+      srand(time(NULL)+pid);
+    }
+    if (pid == 0) { 
+      printf("Sohn: %d\n", globalvariable);
+    }
+    else { 
+      printf("Vater: %d\n", globalvariable);
+    }
+    if (globalvariable <= 25)
+    {
+      usleep(300*1000);
+    } else {
+      usleep( (rand()%400 + 100) *1000);
+    }
+  } 
+
+  if (pid == 0) {
+    printf("Sohn: Ich bin fertig! Ende.\n");
+  } else {
+#if 1
+    // c.3 
+    printf("Vater: Ich bin fertig! Warte auf Sohn...\n");
+    waitpid(pid, NULL, 0); 
+#else
+    if (waitpid(pid, NULL, WNOHANG) == 0) {
+        // c.4
+        printf("Vater: Amen fuer den Sohn...\n");
+        kill(pid, SIGTERM);
+    }
+#endif
+    printf("Vater: Ende.\n");
+  } 
+
+  return 0;
+}
+```
+- Außer das Beenden ist der Durchlauf dieses Programms analog zur a)
+- Prozesssynchronisation wird durch "wait" realisiert
+- c.3: Hier wartet der Vaterprozess auf den Sohn
+	- Wenn der fertig ist dann führt er "waitpid", dadurch wartet er auf ein Signal von dem Sohn, damit er weitermachen darf.
