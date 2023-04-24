@@ -73,8 +73,32 @@ Allgemein zur Fork:
 
 ### Aufgabe 1.2: Prozesszustände
 
-**a)**
+**a)** Warum gibt es neben den Zuständen ready und running einen weiteren Zustand waiting? Was wird durch diesen Zustand erreicht?
 
 Vorwissen: 
 ![[Pasted image 20230424195041.png]]
 - Ausführliche Erklärung dazu findet ihr Im Kapitel 2 Folien 19-20 (II-19 / 20)
+
+**Lösung:**
+- Durch "waiting" wird eine bessere Auslastung der CPU ermöglicht
+- Angnommen wir hätten den Zustand "waiting" nicht:
+	- Wenn ein Prozess auf ein I/O-Ereignis warten würde, dann wird er in ready bleiben, da er nirgendswo gehen kann, obwohl er sogar keine Rechenzeit fordert
+	- Der Prozess kann Busy Waiting machen, also er wird in die CPU bleiben und auf das I/O-Ereignis warte, wodurch die CPU nicht für andere Prozesse benutzt werden kann
+	- Alternativ kann der Prozess wieder in den Zustand ready gehen, wobei er jedes mal bis sein Ereignis tritt, wieder hinten in der Schlage gereiht wird. Diese ist für die CPU sehr belastend, da durchgehend ein Kontextwechsel stattfinden würde.
+- Also ist der Zustand "waiting" unverzichtbar, es reichen also Interrputs und Multiprogramming nicht, es muss eine extra Warteschlange erzeugt werden
+
+---
+
+**b)** Mit Hilfe des Programms top können Sie sich in der Linux-Shell anzeigen lassen, welche Prozesse aktuell vom Kernel verwaltet werden. Es bietet eine Echtzeit-Ansicht, d.h. es werden auch aktuelle Informationen zum Prozesszustand, zur CPU- und zur Speichernutzung angegeben. Auf einem normalen Linux-System werden Sie feststellen, dass sich eine große Zahl von Prozessen im Zustand 'sleeping' (entspricht nach unserer Definition waiting) befindet. Dies repräsentiert nicht den Zustand ready - dieser wird bei top mit dem Zustand running zusammengefasst. Was vermuten
+Sie: warum befinden sich so viele Prozesse im Zustand waiting?
+
+**Lösung:**
+- Sind hilfsfunktionen die bei Bedarf aktiviert werden können
+- Die Erzeugung folgt vorher, damit sie auch schnell ausgeführt werden können
+- Sie sind alle in "sleeping" und nicht in "ready" damit sie z.B. durch Scheduling nicht ausgeführt werden, also in den Running-Zustand.
+	- Dadurch wird unnötige CPU-Belastung stattfinden (Kontextwechsel)
+- Sie werden aufgeweckt, wenn sie nötig sind.
+
+---
+
+### Aufgabe 1.3: Prozesszustände
