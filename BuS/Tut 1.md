@@ -1,5 +1,0 @@
-- 1.1:
-	- CPU kann nur einen Prozess gleichzeitig ausführern
-	- gleichzeitige ausführung von mehreren durch Interrupts
-- ISR abfolge:
-	- 
