@@ -27,6 +27,8 @@ ISR (Interruptserviceroutine):
 7. Nach dem beenden von dem Code, wird der alte Prozess wiederhergestellt. Also Kontext wird von dem Stack wieder in die Registern geladen
 8. Interrputs werden dann wieder freigeschaltet, und der PC counter wird dann wieder auf die alte Position in dem Prozess eingesetzt, und der Code wird weiter ausgeführt
 
+---
+
 **b)**
 
 **Lösung:**
@@ -38,4 +40,16 @@ ISR (Interruptserviceroutine):
 ![[Pasted image 20230424192343.png]]
 - Beispiel für ein Verzeichnis Baum:
 Die Files (1,2,3) sind in Dir(1,2,3) entsprechend zusehen, in Wirklichkeit aber sind in Dir(1,2,3) lediglich Vorweise auf diese Files nicht die Files selber.
-- Wichtig auch in UNIX 
+- Wichtig auch in UNIX, werden I/O Geräte (Tastatur, Bildschrim, etc.) auch durch den Inter-Prozess Kommunikation auf "Datein" abgebildet, die dann über einen Filedescriptor zugegriffen werden können.
+
+---
+
+**c)**
+
+Vorwissen:
+
+- Systemcalls (Syscalls) sind Methoden, die bereitgestellte Funktionalitäten in dem Betriebsystem aufrufen. 
+- Dabei wird die Kontrolle vom Programm an den Kernel übergeben.
+- Was ist ein Filedescriptor:
+	- Nach dem öffnen einer Datei, wird ein Filedescriptor zurückgegeben.
+	- Dieser repräsentiert die geöffnete Da
