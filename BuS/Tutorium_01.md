@@ -157,5 +157,8 @@ int main() {
 
 ```
 
-- Der Vater druckt bei jedem Durchlauf die globale Variabele bis sie den Wert 9 erreicht. 
-- Danach wird
+- Der Vater druckt bei jedem Durchlauf die globale Variabele. 
+- Wenn die globale Variabele den Wert 9 erreicht, wird ein Kindprozess erzeugt. (Kopie vom Vaterprozess)
+- Kind- und Vaterprozess drucken dann die globale Variabele "doppelt"
+- Nach dem Erstellen von dem Kindprozess bekommt er seinen eigenen Zufallszahlengenerator, damit nicht beide Prozesse den gleichen Zufallswert ziehen
+- Wenn die globale Variable den Wert 26 erreicht, werden die Ausgaben von Vater und Sohn nicht mehr alternierend, da die Wartezeit nicht mehr für beide Konstant ist, sondern ein einem Interval liegt (100ms bis 500ms).
