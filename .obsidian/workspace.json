@@ -14,8 +14,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BuS/Tutorium_01.md",
-                "mode": "source",
+                "file": "Abgaben Tracker.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BuS/Tutorium_01.md",
+                "file": "Abgaben Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BuS/Tutorium_01.md",
+                "file": "Abgaben Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BuS/Tutorium_01.md"
+                "file": "Abgaben Tracker.md"
               }
             }
           },
@@ -179,10 +179,10 @@
   },
   "active": "fd2c0184acf8d9c6",
   "lastOpenFiles": [
+    "BuS/Tutorium_01.md",
     "Pasted image 20230424201954.png",
     "Pasted image 20230424195041.png",
     "Pasted image 20230424192343.png",
-    "BuS/Tutorium_01.md",
     "Abgaben Tracker.md",
     "BuS/Tut 1.md",
     "TO Do.md",
