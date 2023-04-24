@@ -101,4 +101,61 @@ Sie: warum befinden sich so viele Prozesse im Zustand waiting?
 
 ---
 
-### Aufgabe 1.3: Prozesszustände
+### Aufgabe 1.3: Prozesse und Prozesserzeugung
+
+**a)** In dieser Aufgabe sollen Sie ein C-Programm schreiben, welches eine globale Variable verwendet. Diese Variable soll am Anfang mit dem Wert 1 initialisiert und mittels einer Schleife bis zum Wert 50 (inklusive) inkrementiert werden. Des Weiteren soll das Programm folgende Funktionalität
+implementieren:
+- Innerhalb der Schleife soll eine Wartezeit eingefügt werden. Solange der Wert der globalen Variable kleiner oder gleich 25 ist, soll diese Wartezeit 300 Millisekunden betragen. Danach soll eine variable Zeit zwischen 100 und 500 Millisekunden gewartet werden. Benutzen Sie Zufallszahlen, um in jedem Schleifendurchlauf eine Wartezeit zu ermitteln. Verwenden Sie srand und rand zur Initialisierung und Erzeugung der Zufallszahlen.
+- Erreicht die globale Variable den Wert 9, soll ein Kindprozess erzeugt werden.
+- Nach dem Erstellen des Kindprozesses soll der Anfangswert für den Zufallszahlengenerator mit dem Befehl srand(time(NULL) +pid) reinitialisiert werden, wobei pid der Rückgabewert der Funktion fork sein soll.
+- In jedem Schleifendurchlauf sollen Vater- und Kindprozess den Wert der globalen Variable ausgeben.
+
+Erklären Sie die Ausgabe des Programms sowie die durch das Erstellen eines Kindprozesses aufgetretenen Effekte. Wieso hat man nach dem Erstellen des Kindprozesses den Anfangswert für den Zufallszahlengenerator neu initialisiert?
+
+**Lösung: **
+
+```c
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <signal.h>
+#include <time.h>
+
+#define TRUE 1
+#define FALSE 0
+
+int globalvariable;
+
+int main() {
+
+  pid_t pid = getpid();
+  for (globalvariable = 1; globalvariable <= 50; globalvariable++)
+  {
+    if (globalvariable == 9) {
+      pid = fork();
+      srand(time(NULL)+pid);
+    }
+    if (pid == 0) { 
+      printf("%d\n", globalvariable);
+    }
+    else { 
+      printf("%d\n", globalvariable);
+    }
+    if (globalvariable <= 25)
+    {
+      usleep(300 * 1000);
+    } else {
+      usleep( (rand()%401 + 100) * 1000);
+    }
+  } 
+
+  return 0;
+}
+
+```
+
+- Der Vater druckt bei jedem Durchlauf die globale Variabele bis sie den Wert 9 erreicht. 
+- Danach wird
