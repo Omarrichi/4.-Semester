@@ -1,8 +1,15 @@
-24.04.2023 - Omar Richi
+24.04.2023 - Omar Richi (omar.richi@rwth-aachen.de)
 
-Für die Abgaben:
-Bitte meldet euch unbedingt in einem Abgabe Team
-Es sollen Dreierteams sein, 
+
+```ad-abstract
+title: Für die Abgaben:
+Bitte meldet euch unbedingt in einem *Abgabeteam*
+Es sollen Dreierteams sein, in Ausnahmefällen auch zu zweit
+Abgabe: eine .pdf Datei mit allen schriftlichen Aufgaben und eine c. Datei mit dem Code
+(Den Code könnt ihr auch gerne nochmal in die PDF schreiben wenn ihr wollt, ist einfacher für Kommentare beim Korrektur :) )
+
+Tutorium2 Blatt wird dann am Dienstag in eine große Gruppe besprochen da das Tutorium am Montag ausfällt.
+```
 
 
 ### Aufgabe 1.1: Betriebssystemgrundlagen
