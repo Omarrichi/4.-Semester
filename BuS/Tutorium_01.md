@@ -24,7 +24,18 @@ ISR (Interruptserviceroutine):
 	- Also die Inhalte der Register in der CPU (z.B. Variabelen) werden dann auf dem Stack festgehalten, damit sie durch die ISR nicht geändert werden.
 5. in der Regel, resettet ISR den Hardware
 6. ggf. führt die ISR Interrupt-Code aus
-7. Nach dem beenden von dem Code, wird der alte Prozess wiederhergestellt. Also Kontext wird von dem Stack wieder in die Registern geladen.
-8. Interrputs werden dann wieder freigeschaltet, und der PC counter wird dann wieder auf die alte Position in dem Prozess eingesetzt, und der Code läuft weiter
+7. Nach dem beenden von dem Code, wird der alte Prozess wiederhergestellt. Also Kontext wird von dem Stack wieder in die Registern geladen
+8. Interrputs werden dann wieder freigeschaltet, und der PC counter wird dann wieder auf die alte Position in dem Prozess eingesetzt, und der Code wird weiter ausgeführt
 
 **b)**
+
+**Lösung:**
+- Jede Datei in Linux ist ein Objekt gespeichert auf der Festplatte, diese Objekte enthalten den Inhalt der Datei.
+- Ein Verzeichnis ist eine Sammlung von Objekten (also Datein), aber selber wiederrum eine Datei
+	- Verzeichnise enthalten aber *nicht* die Dateien selber.
+	- Sie enthalten Meta-Informationen z.B. Ordnernamen, und Referenzen also Verweise auf die Dateien, die das Verzeichnis enthält.
+
+![[Pasted image 20230424192343.png]]
+- Beispiel für ein Verzeichnis Baum:
+Die Files (1,2,3) sind in Dir(1,2,3) entsprechend zusehen, in Wirklichkeit aber sind in Dir(1,2,3) lediglich Vorweise auf diese Files nicht die Files selber.
+- Wichtig auch in UNIX 
