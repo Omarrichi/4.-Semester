@@ -1,3 +1,10 @@
+24.04.2023 - Omar Richi
+
+Für die Abgaben:
+Bitte meldet euch unbedingt in einem Abgabe Team
+Es sollen Dreierteams sein, 
+
+
 ### Aufgabe 1.1: Betriebssystemgrundlagen
 
  **a)** Beschreibe die Abfolge von Ereignissen, die auftreten, wenn eine ISR durch einen HardwareInterrupt ausgelöst wird.
