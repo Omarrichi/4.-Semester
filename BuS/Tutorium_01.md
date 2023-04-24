@@ -1,6 +1,7 @@
-### Aufgabe 1:
+### Aufgabe 1.1: Betriebssystemgrundlagen
 
- **a)**
+ **a)** Beschreibe die Abfolge von Ereignissen, die auftreten, wenn eine ISR durch einen HardwareInterrupt ausgelöst wird.
+ 
  Vorwissen:
 - Die CPU kann nur einen einzigen Prozess durchlaufen lassen.
 - Ziel ist eine Art "Multitasking", damit mehrere Prozess schnelle nacheinander durchlaufen
@@ -10,8 +11,6 @@ Damit Prozesse gestoppt werden  und andere ausgeführt werden können, sind Inte
 
 Interrupt:
 Wenn ein Interrupt gerufen wird, wird eine "Routine" durchbearbeitet, sodass der Prozess selber nicht merkt, dass er gestoppt wird, und damit die CPU genau den alten Prozess ausführt wo er vorher gestoppt wurde.
-
----
 
 **Lösung:**
 
@@ -29,7 +28,7 @@ ISR (Interruptserviceroutine):
 
 ---
 
-**b)**
+**b)** In der Unix-Welt gibt es die Aussage Everything is a le! (Alles ist eine Datei), was meint diese Aussage und wie verhält sich dies für tatsächliche Dateien und wie für Verzeichnisse?
 
 **Lösung:**
 - Jede Datei in Linux ist ein Objekt gespeichert auf der Festplatte, diese Objekte enthalten den Inhalt der Datei.
@@ -44,7 +43,8 @@ Die Files (1,2,3) sind in Dir(1,2,3) entsprechend zusehen, in Wirklichkeit aber 
 
 ---
 
-**c)**
+**c)** Beschreibe in je einem Satz, was diese fünf wichtigen Syscalls tun:
+open, read, write, close, fork
 
 Vorwissen:
 
@@ -57,8 +57,6 @@ Vorwissen:
 	- Jede geöffnete Datei bekommt einen FD
 		- bei 10 geöffneten Datein wird man dann 10 FDen haben
 
----
-
 **Lösung:**
 - read: liest Bytes von einem Filedescriptor
 - write: schreibt Bytes in einen Filedescriptor
@@ -70,3 +68,13 @@ Allgemein zur Fork:
 - Fork erzeugt einen Kopieprozess aus einem Vaterprozess, beide Prozess sind zunächst identisch. Die Kopie wird Kindprozess genannt und originale Prozess ist dann Vaterprozess.
 - Wir wissen aus der Vorlesung, dass jeder Prozess einen eindeutigen PID enthält, damit können wir auch zwischen Vater- und Kindprozess, wichtig ist nun, der Vater behält seine PID aber das Kindprozess bekommt 0 als PID. (Dadurch kann man mit einer IF-Bedingung, Kind bzw. Vater spezifischer Code schreiben).
 (Im Übungsblatt findet ihr mehr dazu (: )
+
+---
+
+### Aufgabe 1.2: Prozesszustände
+
+**a)**
+
+Vorwissen: 
+![[Pasted image 20230424195041.png]]
+- Ausführliche Erklärung dazu findet ihr Im Kapitel 2 Folien 19-20 (II-19 / 20)
