@@ -22,7 +22,7 @@ ISR (Interruptserviceroutine):
 4. Danach wird der Kontext von dem unterbrochenen Prozess auf dem Stack gespeichert.
 	- Also die Inhalte der Register in der CPU (z.B. Variabelen) werden dann auf dem Stack festgehalten, damit sie durch die ISR nicht geändert werden.
 5. in der Regel, resettet ISR den Hardware
-6. ggf. führt die ISR Interrupt-Code aus
+6. Ggf. führt die ISR Interrupt-Code aus
 7. Nach dem beenden von dem Code, wird der alte Prozess wiederhergestellt. Also Kontext wird von dem Stack wieder in die Registern geladen
 8. Interrputs werden dann wieder freigeschaltet, und der PC counter wird dann wieder auf die alte Position in dem Prozess eingesetzt, und der Code wird weiter ausgeführt
 
@@ -241,3 +241,9 @@ int main() {
 - Prozesssynchronisation wird durch "wait" realisiert
 - c.3: Hier wartet der Vaterprozess auf den Sohn
 	- Wenn der fertig ist dann führt er "waitpid", dadurch wartet er auf ein Signal von dem Sohn, damit er weitermachen darf.
+- c.4: Hier wartet der Vaterprozess nicht
+	- Zunächst prüft er mit der If-Bedingung ob er vor dem Sohn fertig ist, wenn nicht dann überspringt er und beendet
+	- Mit "WNOHANG", will der Vater zwar informiert werden wann der Sohn zuende gelaufen ist, wird aber dadurch nicht blockert wie bei c.3. 
+	- Sonst, betet der Vater für seinen Sohn und führt die "kill" Funktion durch.
+		- Der Sohnprozess bekommt den Signal und führt entsprechend die "stirb" Funktion. 
+		- Am Ende terminiert er mit dem Wert -1 (entsprechend ist dies ein unerfolgreicher Ausführung also Error!)
