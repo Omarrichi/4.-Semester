@@ -65,13 +65,27 @@ Lang:
 | $P_3$   | 6            | 7          |
 | $P_4$   | 9            | 2          |
 
-```mermaid
-gantt
-    dateFormat  ss
-    axisFormat  ss
-    title CPU Process Schedule
-    section Process A
-    Process A : 0, 2s
-    Process A : 4s, 7s
+**Lösung:**
 
-```
+LIFO:
+
+![[Pasted image 20230508203209.png]]
+
+Mittlere Wartzeit: $\frac{0+18+2+7+2}{5} = \frac{29}{5} = 5,8$
+
+SRPT:
+
+![[Pasted image 20230508203403.png]]
+
+Mittlere Wartzeit: $\frac{2+0+6+9+0}{5} = \frac{17}{5} = 3,4$
+
+### Aufgabe 3.2: Scheduling-Strategien
+
+| Prozess | Ankunftszeit | Bedienzeit | Deadline |
+| ------- | ------------ | ---------- | -------- |
+| $P_1$   | 4            | 8          | 19       |
+| $P_2$   | 10           | 3          | 28       |
+| $P_3$   | 0            | 7          | 10       |
+| $P_4$   | 1            | 2          | 5        |
+| $P_5$   | 5            | 5          | 11       |
+| $P_5$   | 16           | 1          | 17         |
