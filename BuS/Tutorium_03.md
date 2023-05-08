@@ -1,6 +1,6 @@
 08.05.2023 - Omar Richi (omar.richi@rwth-aachen.de)
 
-### Aufgabe 1.1: Betriebssystemgrundlagen
+### Aufgabe 3.1: Scheduling
 
  **a)** Was ist der Unterscheid zwischen prämtivem und nicht-präemtivem Scheduling? Welche Nachteile haben die Strategien der jeweiligen Kategorie?
 
@@ -46,7 +46,29 @@ Lang:
 
 **c)** Auf Multiprozessor-Plattformen verwaltet Linux eine eigene runqueue für jede CPU. Ist dies ein gutes Konzept? Erläutern Sie Ihre Antwort, indem Sie zwei Gründe anführen.
 
-- Jede CPU hat ihre eigene Queue
-	- Vermeidung von cache Thrashing, wenn wir CPU wechsel
 
 **Lösung:**
+- Jede CPU hat ihre eigene Queue
+	- Vermeidung von cache Thrashing, wenn wir CPU wechseln
+	- Schedulingstrategien und Suchaufwand steigert sich
+	- Scheduling-Entscheidungen können dann lokal folgen:
+		- keine Synchronisation notwendig, da die CPUs nicht auf die gleiche Queue zugreifen müssen
+		- Scheduling von einem CPU blockiert das Scheduling von anderen CPUs nicht
+
+### Aufgabe 3.2: Scheduling-Strategien
+
+| Prozess | Ankunftszeit | Bedienzeit |
+| ------- | ------------ | ---------- |
+| $P_0$   | 0            | 5          |
+| $P_1$   | 2            | 2          |
+| $P_2$   | 3            | 6          |
+| $P_3$   | 6            | 7          |
+| $P_4$   | 9            | 2          |
+
+```mermaid
+    gantt
+        apple :a, 2017-07-20, 1w
+        banana :crit, b, 2017-07-23, 1d
+        cherry :active, c, after b a, 1d
+
+```
