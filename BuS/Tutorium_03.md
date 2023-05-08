@@ -6,7 +6,7 @@
 
 **Lösung:**
 
-Allgemeins: Was ist Scheduling?
+Allgemein: Was ist Scheduling?
 - Verteilung und Zuweisung von begrenzten Ressourcen an Prozessen
 	- Wenn z.B. zwei Prozesse existieren, dann entscheidet der Scheduler welcher Prozess als nächstes ausgeführt werden soll.
 - Es gibt mehrere Schedulingstrategien, die versuchen folgende Ziele zu erreichen:
@@ -19,7 +19,7 @@ Allgemeins: Was ist Scheduling?
 
 |                                  Präemtiv                                   |                      Non-Präemptiv                       |
 |:---------------------------------------------------------------------------:|:--------------------------------------------------------:|
-|                     Ermöglicht Prozess zu unterbrechen                      |           Prozesse laufen bis sie terminieren            |
+|                     Ermöglicht Prozesse zu unterbrechen                      |           Prozesse laufen bis sie terminieren            |
 |               Andere Prozess können zwischengeschoben werden                |             (Oder der PC wird ausgeschaltet)             |
 |              Unterbrochenen Prozesse können fortgesetzt werden              |                      Bsp: FIFO, SPT                      |
 |           Bsp: Round Robin, SRPT (Shortest Remaining Time First)            | Nachteil: Prozesse können für eine lange Zeit blockeiren |
@@ -33,14 +33,14 @@ Allgemeins: Was ist Scheduling?
 Kurz:
 
 | +                                | -                              |
-| -------------------------------- | ------------------------------ |
+| :--------------------------------: | :------------------------------: |
 | parallele Ausführung von Prozessen | sehr oft Kontextwechsel        |
 | Antwortzeiten verbessern sich    | verbliebende Zeit geht gegen 0 |
 
 Lang:
 
 | +                      | -                     |
-| ---------------------- | --------------------- |
+| :----------------------: | :---------------------: |
 | Weniger Kontextwechsel | Langläufer blockieren |
 
 
@@ -58,7 +58,7 @@ Lang:
 ### Aufgabe 3.2: Scheduling-Strategien
 
 | Prozess | Ankunftszeit | Bedienzeit |
-| ------- | ------------ | ---------- |
+| :-------: | :------------: | :----------: |
 | $P_0$   | 0            | 5          |
 | $P_1$   | 2            | 2          |
 | $P_2$   | 3            | 6          |
@@ -82,7 +82,7 @@ Mittlere Wartzeit: $\frac{2+0+6+9+0}{5} = \frac{17}{5} = 3,4$
 ### Aufgabe 3.3: Echtzeitsysteme und Earliest Deadline First
 
 | Prozess | Ankunftszeit | Bedienzeit | Deadline |
-| ------- | ------------ | ---------- | -------- |
+| :-------: | :------------: | :----------: | :--------: |
 | $P_1$   | 4            | 8          | 19       |
 | $P_2$   | 10           | 3          | 28       |
 | $P_3$   | 0            | 7          | 10       |
@@ -104,10 +104,32 @@ Wir könnten $p_5$ nicht bearbeiten und stattdessen $p_1$ die Zeit geben, dann h
 ### Aufgabe 3.4: "Multilevel Feedback Queueing"
 
 | Prozess | Ankunftszeit | Bedienzeit | Priorität |
-| ------- | ------------ | ---------- | --------- |
+| :-------: | :------------: | :----------: | :---------: |
 | $P_1$   | 0            | 5          | 1         |
 | $P_2$   | 0            | 6          | 3         |
 | $P_3$   | 2            | 2          | 2         |
 | $P_4$   | 4            | 10         | 4         |
 | $P_5$   | 6            | 7          | 2         |
 | $P_5$   | 8            | 2          | 1         | 
+
+**Lösung:**
+a) ohne Feedback:
+
+![[Pasted image 20230508204716.png]]
+
+b) Mit Feedback:
+
+![[Pasted image 20230508204751.png]]
+
+c)
+Interaktive Prozesse:
+- Interaktive Prozesse benötigen geringes Quantum
+- hohes Quantum bei solchen Prozessen führt zur Steigerung der Antwortzeiten
+- ein großer Nachteil, da die Prozesse interaktiv sind, also das häufiger wechsel von Prozessen ist erwünscht
+
+Rechenintensiveprozesse:
+- leiden unter kleinen Quanten
+- sehr viele Kontextwechsel für einen Prozess
+- effizienter: CPU Zeit für den Prozess zu verlängern
+
+Ziel: Eine Kombination, Antwortzeiten sollen gering bleiben, aber wenn nicht viele Prozesse sind, dann vermeide Kontextwechsel.
