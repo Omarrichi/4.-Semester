@@ -101,6 +101,9 @@ Ay
 Ag
 An
 AE
+Argumente
+Antwort
+Andere
 VL
 Variabelen
 Vorwissen
@@ -156,6 +159,7 @@ VF
 VKA
 VB
 Vtt
+Verwendung
 ggf
 gleichzeitig
 gleichzeitige
@@ -223,6 +227,7 @@ grObd
 gD
 gZ
 gk
+gutes
 TU
 Tutorium
 Tastatur
@@ -333,6 +338,7 @@ BP
 BpLDP
 BDv
 BT
+Betrachten
 Email
 Eingebettet
 Ereignissen
@@ -399,6 +405,8 @@ EY
 EK
 EoX
 EDDX
+Erläutern
+Ermöglicht
 DB
 Dbis
 Die
@@ -538,6 +546,8 @@ Sm
 Sl
 Smv
 Sj
+Strategien
+Strategie
 UE
 Unix
 UNIX
@@ -584,6 +594,8 @@ Ud
 Ula
 Us
 Ut
+Unterscheid
+Unterbrochenen
 FoSAP
 Festplatte
 Files
@@ -686,6 +698,7 @@ MJ
 MD
 Mp
 Mx
+Multiprozessor
 Gruppen
 Ggf
 Geräte
@@ -721,6 +734,7 @@ GX
 GM
 GDDDDDDDD
 GhW
+Gründe
 Networks
 Nach
 NULL
@@ -770,6 +784,8 @@ NRF
 NJ
 NGFF
 Nh
+Nachteile
+Non
 every
 einen
 einzigen
@@ -849,6 +865,7 @@ eJs
 eo
 eJ
 eB
+eigene
 week
 wegen
 werden
@@ -925,6 +942,7 @@ wd
 wCu
 wbY
 wR
+wären
 Quiz
 Qo
 QN
@@ -1021,6 +1039,7 @@ kFB
 kWk
 kJY
 kqD
+kurzer
 nur
 nacheinander
 nötig
@@ -1126,6 +1145,9 @@ PHp
 Ps
 PNi
 PZ
+Plattformen
+Präemtiv
+Präemptiv
 ausführern
 ausführung
 abfolge
@@ -1204,6 +1226,8 @@ aC
 aBp
 aPE
 ak
+anführen
+ausgeschaltet
 von
 vor
 vorher
@@ -1429,6 +1453,7 @@ IOO
 IDR
 IWa
 IkR
+Ihre
 lassen
 le
 lediglich
@@ -1486,6 +1511,8 @@ li
 lu
 lc
 liQWS
+langer
+laufen
 Ziel
 Zunächst
 Zuständen
@@ -1526,6 +1553,7 @@ ZDDDDDDDDDD
 ZZZ
 Zdu
 ZF
+Zeitschlitze
 ist
 im
 in
@@ -1578,6 +1606,7 @@ iEkV
 iq
 il
 iqO
+indem
 schnelle
 so
 sind
@@ -1748,6 +1777,8 @@ RG
 RBp
 RbU
 RJ
+Round
+Robin
 und
 uns
 unterbrochenen
@@ -1790,6 +1821,7 @@ uI
 uj
 ui
 un
+unterbrechen
 Wechselgeschwindigkeit
 Wenn
 Welt
@@ -1849,6 +1881,7 @@ Wv
 Wf
 WRH
 Wy
+Welche
 bis
 befinden
 bekommen
@@ -1939,6 +1972,8 @@ jo
 jH
 jr
 jd
+jeweiligen
+jede
 fast
 festgehalten
 freigeschaltet
@@ -1997,6 +2032,7 @@ fX
 fQ
 fx
 fS
+fortgesetzt
 Kontext
 Kommunikation
 Kontrolle
@@ -2057,6 +2093,8 @@ KFY
 Kw
 KnAX
 KU
+Kategorie
+Konzept
 resettet
 richi
 rwth
@@ -2106,6 +2144,7 @@ rZ
 rW
 rT
 rLy
+runqueue
 Hardware
 HardwareInterrupt
 Hilfe
@@ -2250,6 +2289,7 @@ Ou
 OY
 OlE
 Om
+Oder
 omar
 open
 originale
@@ -2388,6 +2428,7 @@ tF
 tk
 tIL
 tH
+terminieren
 Jede
 Ju
 JQvv
@@ -2489,6 +2530,8 @@ zT
 zNz
 zh
 zA
+zwei
+zwischengeschoben
 über
 übergeben
 überspringt
@@ -2540,6 +2583,8 @@ ptC
 pz
 pO
 px
+prämtivem
+präemtivem
 xb
 xYKKK
 xqH
