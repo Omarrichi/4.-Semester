@@ -66,9 +66,10 @@ Lang:
 | $P_4$   | 9            | 2          |
 
 ```mermaid
-    gantt
-        apple :a, 2017-07-20, 1w
-        banana :crit, b, 2017-07-23, 1d
-        cherry :active, c, after b a, 1d
-
+gantt
+    dateFormat  ss
+    axisFormat  ss
+    title CPU Process Schedule
+    section Process A
+    Process A : 0, 10
 ```
