@@ -79,7 +79,7 @@ SRPT:
 
 Mittlere Wartzeit: $\frac{2+0+6+9+0}{5} = \frac{17}{5} = 3,4$
 
-### Aufgabe 3.2: Scheduling-Strategien
+### Aufgabe 3.3: Echtzeitsysteme und Earliest Deadline First
 
 | Prozess | Ankunftszeit | Bedienzeit | Deadline |
 | ------- | ------------ | ---------- | -------- |
@@ -88,4 +88,26 @@ Mittlere Wartzeit: $\frac{2+0+6+9+0}{5} = \frac{17}{5} = 3,4$
 | $P_3$   | 0            | 7          | 10       |
 | $P_4$   | 1            | 2          | 5        |
 | $P_5$   | 5            | 5          | 11       |
-| $P_5$   | 16           | 1          | 17         |
+| $P_5$   | 16           | 1          | 17       |
+
+**Lösung:**
+a)
+
+![[Pasted image 20230508203705.png]]
+ 
+b)
+Es werden zwei Deadlines verpasst, $p_1$ und $p_5$
+die Verspätungen sind entsprechend 4 und 3
+Wir könnten $p_5$ nicht bearbeiten und stattdessen $p_1$ die Zeit geben, dann hätten wir nur eine Verletzung gehabt, trotzdem falls eine spätere Antwort besser ist als gar keine, würde man trotzdem zwei Verletzungen vorziehen, damit auch $p_5$ eine geringe Antwortzeit hat, und entsprechend eventuell bestimmte Betriebsmitteln nicht mehr blockiert.
+
+
+### Aufgabe 3.4: "Multilevel Feedback Queueing"
+
+| Prozess | Ankunftszeit | Bedienzeit | Priorität |
+| ------- | ------------ | ---------- | --------- |
+| $P_1$   | 0            | 5          | 1         |
+| $P_2$   | 0            | 6          | 3         |
+| $P_3$   | 2            | 2          | 2         |
+| $P_4$   | 4            | 10         | 4         |
+| $P_5$   | 6            | 7          | 2         |
+| $P_5$   | 8            | 2          | 1         | 
