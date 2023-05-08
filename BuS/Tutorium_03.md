@@ -14,7 +14,7 @@ Allgemeins: Was ist Scheduling?
 	2. Auslastung der CPU: Die CPU darf keine Pause haben, sie soll möglichst ausgelastet werden
 	3. Durchsatz maximieren: Die Anzahl der zubearbeiteten Prozesse soll pro Zeiteinheit möglichst hoch sein.
 	4. Minimierung der Ausführungszeit: Diese beginnt wenn der Prozess an kommt, und endet wenn der Prozess terminiert, Wir können nicht ändern wie lange ein Prozess braucht, jedoch können wir dafür sorgen, dass er nicht viel warten muss zum Beispiel.
-	5. Antwortzeit minimieren: 
+	5. Antwortzeit minimieren: sorgen für schnelle Reaktionen des Systems auf die Eingaben, also die Zeitspanne zwischen ankommen des Prozesses und die erste Ausfühung sollte minimiert sein.
 
 
 |                                  Präemtiv                                   |                      Non-Präemptiv                       |
@@ -30,7 +30,23 @@ Allgemeins: Was ist Scheduling?
 
 **Lösung:**
 
+Kurz:
+
+| +                                | -                              |
+| -------------------------------- | ------------------------------ |
+| parallele Ausführung von Prozessen | sehr oft Kontextwechsel        |
+| Antwortzeiten verbessern sich    | verbliebende Zeit geht gegen 0 |
+
+Lang:
+
+| +                      | -                     |
+| ---------------------- | --------------------- |
+| Weniger Kontextwechsel | Langläufer blockieren |
+
+
 **c)** Auf Multiprozessor-Plattformen verwaltet Linux eine eigene runqueue für jede CPU. Ist dies ein gutes Konzept? Erläutern Sie Ihre Antwort, indem Sie zwei Gründe anführen.
 
+- Jede CPU hat ihre eigene Queue
+	- Vermeidung von cache Thrashing, wenn wir CPU wechsel
 
 **Lösung:**
