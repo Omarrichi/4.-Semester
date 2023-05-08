@@ -71,5 +71,7 @@ gantt
     axisFormat  ss
     title CPU Process Schedule
     section Process A
-    Process A : 0, 10
+    Process A : 0, 2s
+    Process A : 4s, 7s
+
 ```
