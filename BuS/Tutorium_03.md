@@ -16,14 +16,17 @@ Allgemein: Was ist Scheduling?
 	4. Minimierung der Ausführungszeit: Diese beginnt wenn der Prozess an kommt, und endet wenn der Prozess terminiert, Wir können nicht ändern wie lange ein Prozess braucht, jedoch können wir dafür sorgen, dass er nicht viel warten muss zum Beispiel.
 	5. Antwortzeit minimieren: sorgen für schnelle Reaktionen des Systems auf die Eingaben, also die Zeitspanne zwischen ankommen des Prozesses und die erste Ausfühung sollte minimiert sein.
 
+<div style="page-break-after: always; visibility: hidden">
+\pagebreak
+</div>
 
 |                                  Präemtiv                                   |                      Non-Präemptiv                       |
 |:---------------------------------------------------------------------------:|:--------------------------------------------------------:|
-|                     Ermöglicht Prozesse zu unterbrechen                      |           Prozesse laufen bis sie terminieren            |
+|                     Ermöglicht Prozesse zu unterbrechen                     |           Prozesse laufen bis sie terminieren            |
 |               Andere Prozess können zwischengeschoben werden                |             (Oder der PC wird ausgeschaltet)             |
-|              Unterbrochenen Prozesse können fortgesetzt werden              |                      Bsp: FIFO, SPT                      |
-|           Bsp: Round Robin, SRPT (Shortest Remaining Time First)            | Nachteil: Prozesse können für eine lange Zeit blockeiren |
-| Nachteil: höhe Anzahl an Kontextwechsel (Verlängert die Zeit bis Bedingung) |                                                          |
+|              Unterbrochenen Prozesse können fortgesetzt werden              |                                                          |
+|           Bsp: Round Robin, SRPT (Shortest Remaining Time First)            |                      Bsp: FIFO, SPT                      | 
+| Nachteil: höhe Anzahl an Kontextwechsel (Verlängert die Zeit bis Bedingung) | Nachteil: Prozesse können für eine lange Zeit blockeiren |
 
 
 **b)** Betrachten Sie die Scheduling-Strategie Round Robin. Was wären Argumente zur Verwendung kurzer bzw. langer Zeitschlitze?
@@ -78,6 +81,10 @@ SRPT:
 ![[Pasted image 20230508203403.png]]
 
 Mittlere Wartzeit: $\frac{2+0+6+9+0}{5} = \frac{17}{5} = 3,4$
+
+<div style="page-break-after: always; visibility: hidden">
+\pagebreak
+</div>
 
 ### Aufgabe 3.3: Echtzeitsysteme und Earliest Deadline First
 

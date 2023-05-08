@@ -31,9 +31,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "b5b0f098acf56280",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.7"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "b8032abb3fb97466",
@@ -95,6 +105,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "c9ec781cdedd0555",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -198,7 +216,7 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "6c86ee9ea81fffc0",
+  "active": "b5b0f098acf56280",
   "lastOpenFiles": [
     "Pasted image 20230508204751.png",
     "Pasted image 20230508204716.png",
