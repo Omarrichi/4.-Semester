@@ -92,4 +92,29 @@ unteil FALSE
 - Es kann zum Deadlock kommen, wenn alle drei Prozesse ihr erstes *wait* ausführen. Bei einem der drei Prozesse sollte die Reihenfolge der beiden *waits* vertauscht werden.
 
 **b) Lösung:**
-- 
+- Benötigt ein Mutex, damit ein exklusiver Zugriff sichergestellt werden kann:
+
+![[Pasted image 20230518155450.png]]
+
+**c) Lösung:**
+- Gleich wie b) aber mit einem extra Zählsemephor, das die Zahl der noch nicht gelesenen Schreiboperationen mithält:
+
+![[Pasted image 20230518155623.png]]
+
+<div style="page-break-after: always; visibility: hidden">
+\pagebreak
+</div>
+
+**d) Lösung:**
+
+![[Pasted image 20230518155809.png]]
+
+### Aufgabe 4.3: Game of (critical) Zones:
+
+Hier sind die Lösungen zu der drei Aufgaben die wir gemacht haben, ich empfehle euch aber trotzdem selber zu schauen, und vielleicht weitere Aufgaben lösen.  https://deadlockempire.github.io/
+
+![[Pasted image 20230518155923.png]]
+
+![[Pasted image 20230518155933.png]]
+
+![[Pasted image 20230518155939.png]]

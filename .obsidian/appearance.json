@@ -4,5 +4,6 @@
   "enabledCssSnippets": [
     "marker",
     "snippets"
-  ]
+  ],
+  "baseFontSize": 15
 }

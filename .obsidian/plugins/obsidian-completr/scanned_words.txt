@@ -112,6 +112,8 @@ Ausfühung
 Antwortzeiten
 Ankunftszeit
 Ausschlusses
+Ausschluss
+Aufgaben
 VL
 Variabelen
 Vorwissen
@@ -253,6 +255,8 @@ geringe
 geringes
 großer
 gering
+gelesenen
+gemacht
 TU
 Tutorium
 Tastatur
@@ -309,6 +313,8 @@ To
 Time
 Thrashing
 True
+TRUE
+Turn
 BuS
 Benutzer
 Betriebssystemgrundlagen
@@ -372,6 +378,8 @@ Bedienzeit
 Betriebsmitteln
 Bereich
 Bounded
+Bei
+Benötigt
 Email
 Eingebettet
 Ereignissen
@@ -523,6 +531,7 @@ DN
 Durchsatz
 Deadline
 Deadlines
+Deadlock
 Übung
 ÜB
 Übungsblatt
@@ -599,6 +608,8 @@ SPT
 Suchaufwand
 Synchronisation
 Steigerung
+Semaphore
+Schreiboperationen
 UE
 Unix
 UNIX
@@ -699,6 +710,8 @@ First
 FIFO
 Feedback
 Flags
+FALSE
+Flag
 MaLo
 Multitasking
 Meta
@@ -759,6 +772,7 @@ Minimierung
 Mittlere
 Multilevel
 Mutual
+Mutex
 Gruppen
 Ggf
 Geräte
@@ -795,6 +809,8 @@ GM
 GDDDDDDDD
 GhW
 Gründe
+Gleich
+Game
 Networks
 Nach
 NULL
@@ -935,6 +951,11 @@ erste
 eventuell
 erwünscht
 effizienter
+einmal
+erstes
+exklusiver
+empfehle
+euch
 week
 wegen
 werden
@@ -1016,6 +1037,9 @@ welcher
 wechseln
 wechsel
 wechselnd
+while
+waits
+weitere
 Quiz
 Qo
 QN
@@ -1120,6 +1144,7 @@ kurzer
 könnten
 kleinen
 kritischen
+kommen
 nur
 nacheinander
 nötig
@@ -1178,6 +1203,7 @@ nJ
 na
 nächstes
 notwendig
+noch
 Prozess
 Prozesse
 Programmcounter
@@ -1320,6 +1346,7 @@ after
 always
 anderen
 ausführen
+abwechseldn
 von
 vor
 vorher
@@ -1379,6 +1406,8 @@ vorziehen
 verlängern
 vermeide
 verletzt
+vertauscht
+vielleicht
 mehreren
 mehrere
 man
@@ -1441,6 +1470,7 @@ minimieren
 minimiert
 müssen
 maximal
+mithält
 durch
 durchlaufen
 damit
@@ -1629,6 +1659,8 @@ laufen
 lange
 lokal
 leiden
+lebt
+lösen
 Ziel
 Zunächst
 Zuständen
@@ -1675,6 +1707,10 @@ Ziele
 Zuteilung
 Zeiteinheit
 Zeitspanne
+Zuerst
+Zugriff
+Zählsemephor
+Zones
 ist
 im
 in
@@ -1730,6 +1766,7 @@ iqO
 indem
 ihre
 interaktiv
+ich
 schnelle
 so
 sind
@@ -1809,6 +1846,11 @@ style
 steigert
 spätere
 solchen
+setzten
+setzt
+stirbt
+sichergestellt
+schauen
 höhen
 hat
 hergestellt
@@ -1917,6 +1959,7 @@ Ressourcen
 Reaktionen
 Remaining
 Rechenintensiveprozesse
+Reihenfolge
 und
 uns
 unterbrochenen
@@ -2024,6 +2067,7 @@ Welche
 Weniger
 Wartzeit
 Wechselseiteiges
+Wechselseitiger
 bis
 befinden
 bekommen
@@ -2090,6 +2134,8 @@ besser
 bestimmte
 benötigen
 betreten
+bleibt
+beiden
 jeden
 ja
 je
@@ -2130,6 +2176,7 @@ jd
 jeweiligen
 jede
 jedoch
+jetzt
 fast
 festgehalten
 freigeschaltet
@@ -2308,6 +2355,7 @@ rW
 rT
 rLy
 runqueue
+remain
 Hardware
 HardwareInterrupt
 Hilfe
@@ -2402,6 +2450,8 @@ cCl
 ct
 cyB
 cache
+critical
+crit
 Omar
 Objekt
 Objekte
@@ -2550,6 +2600,7 @@ Lq
 Lang
 Langläufer
 LIFO
+Lösungen
 tatsächliche
 tun
 tritt
@@ -2600,6 +2651,7 @@ tIL
 tH
 terminieren
 trotzdem
+turn
 Jede
 Ju
 JQvv
