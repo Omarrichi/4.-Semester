@@ -111,6 +111,7 @@ Antwortzeit
 Ausfühung
 Antwortzeiten
 Ankunftszeit
+Ausschlusses
 VL
 Variabelen
 Vorwissen
@@ -307,6 +308,7 @@ TI
 To
 Time
 Thrashing
+True
 BuS
 Benutzer
 Betriebssystemgrundlagen
@@ -368,6 +370,8 @@ Betrachten
 Bsp
 Bedienzeit
 Betriebsmitteln
+Bereich
+Bounded
 Email
 Eingebettet
 Ereignissen
@@ -441,6 +445,7 @@ Entscheidungen
 Echtzeitsysteme
 Earliest
 Eine
+Exclusion
 DB
 Dbis
 Die
@@ -693,6 +698,7 @@ Fairness
 First
 FIFO
 Feedback
+Flags
 MaLo
 Multitasking
 Meta
@@ -752,6 +758,7 @@ Multiprozessor
 Minimierung
 Mittlere
 Multilevel
+Mutual
 Gruppen
 Ggf
 Geräte
@@ -1008,6 +1015,7 @@ wären
 welcher
 wechseln
 wechsel
+wechselnd
 Quiz
 Qo
 QN
@@ -1111,6 +1119,7 @@ kqD
 kurzer
 könnten
 kleinen
+kritischen
 nur
 nacheinander
 nötig
@@ -1224,6 +1233,7 @@ Präemptiv
 Pause
 Prozesses
 Priorität
+Progress
 ausführern
 ausführung
 abfolge
@@ -1309,6 +1319,7 @@ ankommen
 after
 always
 anderen
+ausführen
 von
 vor
 vorher
@@ -1367,6 +1378,7 @@ verpasst
 vorziehen
 verlängern
 vermeide
+verletzt
 mehreren
 mehrere
 man
@@ -1428,6 +1440,7 @@ maximieren
 minimieren
 minimiert
 müssen
+maximal
 durch
 durchlaufen
 damit
@@ -1491,6 +1504,8 @@ dwLTv
 dc
 dafür
 div
+drei
+dürfen
 Interrupts
 ISR
 Interrupt
@@ -2008,6 +2023,7 @@ Wy
 Welche
 Weniger
 Wartzeit
+Wechselseiteiges
 bis
 befinden
 bekommen
@@ -2073,6 +2089,7 @@ bearbeiten
 besser
 bestimmte
 benötigen
+betreten
 jeden
 ja
 je
@@ -2175,6 +2192,7 @@ fortgesetzt
 fair
 folgen
 falls
+flag
 Kontext
 Kommunikation
 Kontrolle
@@ -2239,6 +2257,7 @@ Kategorie
 Konzept
 Kurz
 Kombination
+Kriterien
 resettet
 richi
 rwth
@@ -2435,6 +2454,7 @@ OY
 OlE
 Om
 Oder
+Obergrenze
 omar
 open
 originale
@@ -2689,6 +2709,7 @@ zugreifen
 über
 übergeben
 überspringt
+überholt
 öffnen
 öffnet
 öm
