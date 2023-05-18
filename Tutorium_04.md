@@ -52,3 +52,44 @@ Die drei Kriterien des Wechselseiteiges Ausschlusses:
 
 
 ### Aufgabe 4.2: Semaphore:
+
+**a)**
+
+```
+Prozess A:
+repeat
+	wait(festplatte)
+	wait(kartenleser)
+	nutze_Geräte
+	signal(festplatte)
+	signal(kartenleser)
+unteil FALSE
+```
+
+```
+Prozess B:
+repeat
+	wait(drucker)
+	wait(festplatte)
+	nutze_Geräte
+	signal(drucker)
+	signal(festplatte)
+unteil FALSE
+```
+
+```
+Prozess C:
+repeat
+	wait(kartenleser)
+	wait(drucker)
+	nutze_Geräte
+	signal(kartenleser)
+	signal(drucker)
+unteil FALSE
+```
+
+**a) Lösung: **
+- Es kann zum Deadlock kommen, wenn alle drei Prozesse ihr erstes *wait* ausführen. Bei einem der drei Prozesse sollte die Reihenfolge der beiden *waits* vertauscht werden.
+
+**b) Lösung:**
+- 
