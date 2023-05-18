@@ -2,7 +2,7 @@
 
 ### Aufgabe 3.1: Scheduling
 
- **a)** Was ist der Unterscheid zwischen prämtivem und nicht-präemtivem Scheduling? Welche Nachteile haben die Strategien der jeweiligen Kategorie?
+ **a)** Was ist der Unterscheid zwischen präemptivem und nicht-präemptivem Scheduling? Welche Nachteile haben die Strategien der jeweiligen Kategorie?
 
 **Lösung:**
 
@@ -20,7 +20,7 @@ Allgemein: Was ist Scheduling?
 \pagebreak
 </div>
 
-|                                  Präemtiv                                   |                      Non-Präemptiv                       |
+|                                  Präemptiv                                   |                      Non-Präemptiv                       |
 |:---------------------------------------------------------------------------:|:--------------------------------------------------------:|
 |                     Ermöglicht Prozesse zu unterbrechen                     |           Prozesse laufen bis sie terminieren            |
 |               Andere Prozess können zwischengeschoben werden                |             (Oder der PC wird ausgeschaltet)             |
