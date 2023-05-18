@@ -1,6 +1,6 @@
 15.05.2023 - Omar Richi (omar.richi@rwth-aachen.de)
 
-### Aufgabe 4.1: 
+### Aufgabe 4.1: Wechselseitiger Ausschluss
 
 Die drei Kriterien des Wechselseiteiges Ausschlusses:
 - Mutual Exclusion:
@@ -40,12 +40,15 @@ Die drei Kriterien des Wechselseiteiges Ausschlusses:
 3. Progress ist verletzt: 
 	- Zuerst führt $P_0$ aus, turn wird auf 1 gesetzt aber $P_0$ stirbt, jetzt darf $P_1$ einmal ausführen und setzt turn wieder auf 0. Turn bleibt bei 0 da $P_0$ nicht mehr lebt, also $P_1$ darf nicht mehr ausführen
 
-| t   | P0        | P1    | turn |
-| --- | --------- | ----- | ---- |
-| 1   | crit.     | -     | 0    |
-| 2   | turn = 1  | -     | 1    |
-| 3   | remain... |       | 1    |
-| 4   | stirbt    | crit. | 1    |
-| 5   | -         | turn = 0      | 0     |
-| 6   | -         |    remain.   |   0   |
-| 7   | -         |    while   |      0|
+| t   | P0        | P1       | turn |
+| --- | --------- | -------- | ---- |
+| 1   | crit.     | -        | 0    |
+| 2   | turn = 1  | -        | 1    |
+| 3   | remain... |          | 1    |
+| 4   | stirbt    | crit.    | 1    |
+| 5   | -         | turn = 0 | 0    |
+| 6   | -         | remain.  | 0    |
+| 7   | -         | while    | 0    | 
+
+
+### Aufgabe 4.2: Semaphore:

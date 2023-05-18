@@ -1,0 +1,10 @@
+{
+  "blockSize": 99,
+  "jsSettings": {
+    "indentSize": "1.2em",
+    "commentDelimiter": "//",
+    "lineNumber": false,
+    "lineNumberPunc": ":",
+    "noEnd": false
+  }
+}
