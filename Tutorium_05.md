@@ -21,11 +21,20 @@ Zunächst brauchen wir eine Hilfstabelle, hier findet ihr beide Tabellen, vom Tu
 
 *Eigene Tabelle:*
 
-| Zeit | $P_1$ | $P_2$     | $P_3$ |
-| ---- | ----- | --------- | ----- |
-| 1    | D(2)  | B(4)      | -     |
-| 2    | D(1)  | B(3)      | A(5)  |
-| 3    | C(3)  | B(2),D(3) | A(4)  |
-| 4    | C(2)  | B(2),D      |       |
-| 5    |       |           |       |
-| 6    |       |           |       |
+| Zeit | $P_1$     | $P_2$          | $P_3$     |
+| ---- | --------- | -------------- | --------- |
+| 1    | D(2)      | B(4)           | -         |
+| 2    | D(1)      | B(3)           | A(5)      |
+| 3    | C(3)      | B(2),D(3)      | A(4)      |
+| 4    | C(2)      | B(1),D(2),c(2) | A(3),b(3) |
+| 5    | C(1),a(5) | B(1),D(2),c(2) | A(3),b(3) |
+| 6    | C(1),a(5) | B(1),D(2),c(2) | A(3),b(3) | 
+
+- Hier beschriebt jede Spalte den Verlauf eines Prozesses
+- Wenn wir X(N) schreiben dann:
+	- Betriebsmittel X ist dem Prozess P gegeben worden, und es muss für N Zeiteinheiten noch dort bleiben
+- Wenn wir x(N) schreiben dann:
+	- Betriebsmittel *kann* nicht an Prozess P übergeben werden, da er zur Zeit einem anderen Prozess gehört.
+- groß geschrieben heißt P hat X
+- klein geschrieben heißt P braucht x aber x ist bei einem anderen Prozess schon.
+- Wenn ein Prozess ein x (also klein geschriebener Betriebsmittel) in seinen Spalte hat, dann ist dieser Prozess blockiert (blockiert ist wenn der Prozess *nichts* ausführt, entsprechend lässt er die anderen Betriebsmitteln, die er hat, nicht frei).
