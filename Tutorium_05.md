@@ -54,4 +54,23 @@ Aus der Tabelle gelesen folgt der Graph:
 
 - (Exclusive Use): Folgt aus der Frage, es gibt nur jeweils ein Exemplar eines BM, der auch nur von einem Prozess benutzt werden kann
 - Außerdem aus der Frage: der Prozess setzt seine Arbeit nur dann fort, wenn ihm die angeforderten Bm zugewiesen worden sind (Hold and Wait).
-- (Non Preemption): Auch aus der Frage: Der Prozess bestimmt, das 
+- (Non Preemption): Auch aus der Frage: Der Prozess bestimmt, das BM erst wieder zu einem späteren Zeitpunkt zurückzugeben.
+
+Alle Bedingungen sind also erfüllt, es gibt ein Deadlock.
+
+### Aufgabe 5.2: Prozessfortschrittsdiagramme
+
+Wollen zwei Prozesse während ihrer Laufzeit verschiedene Betriebsmittel exklusiv benutzen, könnten sie dies dem System im Voraus mitteilen, um Deadlocks zu vermeiden. Das Betriebssystem könnte dann ihren zeitlichen Ablauf so koordinieren, dass ein erfolgreiches Beenden beider Prozesse gesichert ist (falls dies möglich ist).
+
+Zur Veranschaulichung des Ablaufs kann man Prozessfortschrittsdiagramme verwenden. Die Achsen markieren dabei die Laufzeiten der beiden Prozesse, die um Betriebsmittel konkurrieren. Schraffiert oder farblich hervorgehoben werden die Zeiträume, in denen beide Prozesse gleichzeitig ein exklusives Betriebsmittel beanspruchen. Ein Schedule gibt an, welcher Prozess in welcher Zeiteinheit ausgeführt wird (z.B. für die Zeiteinheiten 1 bis 10 und zwei Prozesse A und B: AABABBBAAA).
+
+**a)** Gegeben seien die Prozesse A und B, die jeweils zehn Zeiteinheiten laufen, und fünf exklusiv zu nutzende Betriebsmittel BM1 bis BM5. Die Prozesse versuchen in den folgenden Zeiteinheiten ihrer Ausführung auf die Betriebsmittel zuzugreifen:
+
+![[Pasted image 20230523230715.png]]
+
+Tragen Sie diese Situation in ein Prozessfortschrittsdiagramm ein (Prozess A: y-Achse, Prozess B: x-Achse).
+
+**b)** Zu jedem Zeitpunkt befindet sich das System in einem Zustand $(x, y)$, d.h. Prozess $B$ wurde bereits für $x$ Zeiteinheiten ausgeführt, Prozess $A$ für $y$ Zeiteinheiten. Ein Zustand, in dem eine erfolgreiche Beendigung der beiden Prozesse möglich ist, wird _sicher_ genannt. Ein Zustand, in dem zwar noch nicht unbedingt ein Deadlock vorliegt, von dem aus allerdings ein Deadlock unvermeidlich ist, wird _unsicher_ genannt. Ein Zustand im Diagramm, der durch keine Ausführungsreihenfolge der Prozesse jemals erreicht werden kann, wird _unmöglich_ genannt. Heben Sie in Ihrem Diagramm aus Teil a) hervor, welche Bereiche unsicher und welche unmöglich sind. Geben Sie darüber hinaus an, welchen Status (sicher, unsicher, unmöglich) folgende Zustände haben:
+$$(2, 4); (3, 2); (8, 10); (6, 7)$$
+
+**c)**
