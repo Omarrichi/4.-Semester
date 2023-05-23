@@ -91,11 +91,36 @@ dann die des anderen) ist an dieser Stelle verboten.
 
 ### Aufgabe 5.3: Banker-Algorithmus
 
-Gegeben seien drei Prozesse $P1, P2$ und $P3$, die drei Betriebsmittel $BM1, BM2$ und $BM3$ benutzen wollen. Es existieren $9$ Exemplare von $BM1$, $10$ von $BM2$ und $16$ von $BM3$; jedes Exemplar kann nur exklusiv genutzt werden. Zum Zeitpunkt $0$ sei der Vektor freier Betriebsmittel $(BM1, BM2, BM3)$
-gegeben mit: $V(0) = (V1(0), V2(0), V3(0)) = (7, 5, 11)$.
+Gegeben seien drei Prozesse $P1, P2$ und $P3$, die drei Betriebsmittel $BM1, BM2$ und $BM3$ benutzen wollen. Es existieren $9$ Exemplare von $BM1$, $10$ von $BM2$ und $16$ von $BM3$; jedes Exemplar kann nur exklusiv genutzt werden. Zum Zeitpunkt $0$ sei der Vektor freier Betriebsmittel $(BM1, BM2, BM3)$ gegeben mit: $V(0) = (V_1(0), V_2(0), V_3(0)) = (7, 5, 11)$.
 
 Weiterhin gilt:
 - $Q_1^{max}(0) = (Q_{11}^{max}, Q_{12}^{max}, Q_{13}^{max}) = (5,3,5)$
 	- $H_1(0) = (H_{11}(0),H_{12}(0),H_{13}(0)) = (0,2,1)$
 - $Q_2^{max}(0) = (2,3,5), H_2(0) = (0,2,3)$
 - $Q_3^{max}(0) = (5,1,1), H_3(0) = (2,1,1)$ 
+
+**a)** Prüfen Sie mit dem in der Vorlesung vorgestellten Banker-Algorithmus zur Deadlockvermeidung, ob sich das System in einem sicheren Zustand befindet.
+
+**b)** In der Realität erfolgen nicht alle Anforderungen auf einen Schlag, sondern es werden immer eine oder wenige Anforderungen zu einem Zeitpunkt kommen. Der Banker-Algorithmus kann auch dazu verwendet werden, zu solch einer Anforderung zu entscheiden, ob das System in einem sicheren Zustand bleibt oder nicht.
+
+Zum Zeitpunkt $k$ erfolge nun eine Anforderung. Betrachten Sie die folgenden vier Alternativen. Welche der Anforderungen führen jeweils vom obigen Zustand ausgehend in einen sicheren Zustand, d.h welche Anforderungen dürften erfüllt werden?
+
+1. $Q_2^{akt}(k)=(0,2,0)$
+2. $Q_2^{akt}(k)=(0,0,2)$
+3. $Q_3^{akt}(k)=(0,0,1)$
+4. $Q_3^{akt}(k)=(0,1,0)$
+
+
+*Hinweis:* Sie können an dieser Stelle wieder jeweils den gesamten Banker-Algorithmus ausführen, aber dies ist nicht unbedingt nötig; eine informelle Beschreibung mit korrekter Argumentation reicht auch aus.
+
+**c)** Ein System verwernde den Banker-Algorithmus, um Deadlocks zu vermeiden. Zu einem betrachteten Zeitpunkt fordere ein Prozess $P$ ein Betriebsmittel $BM$ an; die Anforderung wird allerdings vom System abgelehnt. Kann man daraus sicher schließen, dass die Zuteilung von $BM$ an $P$ einen Deadlock verursachen würde? Bzw. warum nicht?
+
+**Lösung:**
+
+a)
+
+Sicherheitsprüfung mit dem Banker-Algorithmus: 
+
+1. P1 ist erster unmarkierter Prozess.
+- Prüfe Qmax 1
+(k) = (5, 3, 5) <= V(k) = (7, 5, 11)
