@@ -88,3 +88,14 @@ dann die des anderen) ist an dieser Stelle verboten.
 | $(3,2)$   | unsicher |
 | $(8,10)$  | sicher   |
 | $(6,7)$   | sicher   |
+
+### Aufgabe 5.3: Banker-Algorithmus
+
+Gegeben seien drei Prozesse $P1, P2$ und $P3$, die drei Betriebsmittel $BM1, BM2$ und $BM3$ benutzen wollen. Es existieren $9$ Exemplare von $BM1$, $10$ von $BM2$ und $16$ von $BM3$; jedes Exemplar kann nur exklusiv genutzt werden. Zum Zeitpunkt $0$ sei der Vektor freier Betriebsmittel $(BM1, BM2, BM3)$
+gegeben mit: $V(0) = (V1(0), V2(0), V3(0)) = (7, 5, 11)$.
+
+Weiterhin gilt:
+- $Q_1^{max}(0) = (Q_{11}^{max}, Q_{12}^{max}, Q_{13}^{max}) = (5,3,5)$
+	- $H_1(0) = (H_{11}(0),H_{12}(0),H_{13}(0)) = (0,2,1)$
+- $Q_2^{max}(0) = (2,3,5), H_2(0) = (0,2,3)$
+- $Q_3^{max}(0) = (5,1,1), H_3(0) = (2,1,1)$ 
