@@ -5,7 +5,14 @@
 Betrachten Sie in dieser Aufgabe das Problem der Erkennung von Deadlocks. Gegeben sei ein System mit drei Prozessen $P1, . . . , P3$ und vier Betriebsmitteln $A, . . . ,D$, von denen jeweils nur ein Exemplar zur Verfügung steht und die nur von einem Prozess gleichzeitig verwendet werden können. Die
 Anforderungen von Betriebsmitteln durch die Prozesse ist in der folgenden Tabelle gegeben.
 
-![[Pasted image 20230523223544.png]]
+| Zeit | $P_1$ | $P_2$ |   $P_3$   |
+| :----: |:-----:|:-----:|:---------:|
+| 1    | (D;2) | (B;4) |           |
+| 2    |       |       |   (A;5)   |
+| 3    | (C;3) | (D;3) |           |
+| 4    |       | (C;2) |   (B;3)   |
+| 5    | (A;5) |       |           |
+| 6    |       |       |  |
 
 Stellen Sie die Situation aus der obigen Tabelle für den Zeitpunkt $t = 6$ anhand eines Resource Allocation Graph dar. Liegt ein Deadlock vor? Begründen Sie Ihre Antwort.
 
@@ -45,7 +52,8 @@ Zunächst brauchen wir eine Hilfstabelle, hier findet ihr beide Tabellen, vom Tu
 - groß geschrieben heißt P hat X
 - klein geschrieben heißt P braucht x aber x ist bei einem anderen Prozess schon.
 - Wenn ein Prozess ein x (also klein geschriebener Betriebsmittel) in seinen Spalte hat, dann ist dieser Prozess blockiert (blockiert ist wenn der Prozess *nichts* ausführt, entsprechend lässt er die anderen Betriebsmitteln, die er hat, nicht frei).
-
+- 
+(ihr könnt natürlich klein und groß vertauschen, das Ergebnis ist gleich solange ihr euch daran hält)
 Aus der Tabelle gelesen folgt der Graph:
 
 ![[Pasted image 20230523225320.png]]
