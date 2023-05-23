@@ -12,15 +12,36 @@
             "id": "9a0bd12aedc30adb",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Photos/Pasted image 20230523231738.png"
+              }
+            }
+          },
+          {
+            "id": "e93754076e247d71",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Photos/Pasted image 20230523230715.png"
+              }
+            }
+          },
+          {
+            "id": "a9d34d5641d92543",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutorium_05.md",
-                "mode": "source",
+                "file": "Abgaben Tracker.md",
+                "mode": "preview",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "b8032abb3fb97466",
@@ -33,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutorium_05.md",
+                "file": "BuS/Tutorium_05.md",
                 "mode": "preview",
                 "source": true
               }
@@ -113,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tutorium_05.md",
+                "file": "Abgaben Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tutorium_05.md",
+                "file": "Abgaben Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutorium_05.md"
+                "file": "Abgaben Tracker.md"
               }
             }
           },
@@ -192,22 +213,22 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "1c080b586e6996ac",
+  "active": "a9d34d5641d92543",
   "lastOpenFiles": [
-    "Pasted image 20230523230715.png",
-    "Pasted image 20230523225320.png",
-    "Pasted image 20230523223822.png",
-    "Pasted image 20230523223544.png",
+    "BuS/Tutorium_05.md",
+    "Photos/Pasted image 20230523225320.png",
+    "Photos/Pasted image 20230523230715.png",
+    "Photos/Pasted image 20230523231738.png",
+    "Photos",
+    "Photos/Pasted image 20230523223822.png",
+    "Photos/Pasted image 20230523223544.png",
     "BuS/Tutorium_03.md",
-    "Tutorium_05.md",
-    "Pasted image 20230518155939.png",
+    "Photos/Pasted image 20230518155939.png",
     "BuS/Tutorium_04.md",
-    "Pasted image 20230518155933.png",
-    "Pasted image 20230518155923.png",
-    "Pasted image 20230518155809.png",
-    "Pasted image 20230518155623.png",
-    "Pasted image 20230518155450.png",
-    "Pasted image 20230508204751.png",
+    "Photos/Pasted image 20230518155933.png",
+    "Photos/Pasted image 20230518155923.png",
+    "Photos/Pasted image 20230518155809.png",
+    "Photos/Pasted image 20230518155623.png",
     "BuS/Tutorium_01.md",
     "Abgaben Tracker.md",
     "BuS/Tut 1.md",

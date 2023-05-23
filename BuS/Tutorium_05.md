@@ -73,4 +73,18 @@ Tragen Sie diese Situation in ein Prozessfortschrittsdiagramm ein (Prozess A: y-
 **b)** Zu jedem Zeitpunkt befindet sich das System in einem Zustand $(x, y)$, d.h. Prozess $B$ wurde bereits für $x$ Zeiteinheiten ausgeführt, Prozess $A$ für $y$ Zeiteinheiten. Ein Zustand, in dem eine erfolgreiche Beendigung der beiden Prozesse möglich ist, wird _sicher_ genannt. Ein Zustand, in dem zwar noch nicht unbedingt ein Deadlock vorliegt, von dem aus allerdings ein Deadlock unvermeidlich ist, wird _unsicher_ genannt. Ein Zustand im Diagramm, der durch keine Ausführungsreihenfolge der Prozesse jemals erreicht werden kann, wird _unmöglich_ genannt. Heben Sie in Ihrem Diagramm aus Teil a) hervor, welche Bereiche unsicher und welche unmöglich sind. Geben Sie darüber hinaus an, welchen Status (sicher, unsicher, unmöglich) folgende Zustände haben:
 $$(2, 4); (3, 2); (8, 10); (6, 7)$$
 
-**c)**
+**c)** Schreiben Sie einen Schedule für die beiden Prozesse auf, so dass beide Prozesse vollständig ausgeführt werden können, und zeichnen Sie ihn in das Diagramm aus Teil a) ein. 
+
+*Hinweis*: Ein sequentieller Schedule (d.h. zunächst die vollständige Ausführung eines Prozesses,
+dann die des anderen) ist an dieser Stelle verboten.
+
+**Lösung:**
+
+![[Pasted image 20230523231738.png]]
+
+| Zeitpunkt | Status   |
+| --------- | -------- |
+| $(2,4)$   | sicher   |
+| $(3,2)$   | unsicher |
+| $(8,10)$  | sicher   |
+| $(6,7)$   | sicher   |
