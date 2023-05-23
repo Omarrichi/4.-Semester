@@ -142,7 +142,34 @@ Betriebsmittel-Zuteilung mit dem Banker-Algorithmus
 -  $Q_2^{akt}(k)=(0,2,0):$
 
 1. $Q^{akt}_2 (k) = (0, 2, 0) <= V(k) = (7, 5, 11)$
-2. Setze probehalber V(k) := V(k) −Q2(k) = (7, 3, 11)
-	- H2(k) := H2(k) +Q2(k) = (0, 2, 3) + (0, 2, 0) = (0, 4, 3) Qmax
-2
-(k) := Qmax(k) −Q2(k) = (2, 3, 5) − (0, 2, 0) = (2, 1, 5).
+2. Setze probehalber $V(k) := V(k)−Q_2(k) = (7, 3, 11)$
+	- $H_2(k) := H_2(k) +Q_2(k) = (0, 2, 3) + (0, 2, 0) = (0, 4, 3)$
+	- $Q^{max}_2(k) := Q^{max}_2(k) −Q_2(k) = (2, 3, 5) − (0, 2, 0) = (2, 1, 5).$
+3. Mache Sicherheitsprüfung
+
+-  $Q_2^{akt}(k)=(0,0,2):$
+
+1. $Q^{akt}_2(k) = (0, 0, 2) <= V(k) = (7, 5, 11)$
+2. Setze probehalber $V(k) = V(k) −Q_2(k) = (7, 5, 9)$
+	- $H_2(k) = H_2(k) +Q_2(k) = (0, 2, 3) + (0, 0, 2) = (0, 2, 5)$
+	- $Q^{max}_2 (k) = Q^{max}_2(k) −Q_2(k) = (2, 3, 5) − (0, 0, 2) = (2, 3, 3).$
+3. Mache Sicherheitsprüfung
+
+
+- $Q_3^{akt}(k)=(0,0,1)$
+
+1. $Q^{akt}_3 (k) = (0, 0, 1) <= V(k) = (7, 5, 11)$
+2. Setze probehalber $V(k) = V(k) −Q_3(k) = (7, 5, 10)$
+	- $H_3(k) = H_3(k) +Q_3(k) = (2, 1, 1) + (0, 0, 1) = (2, 1, 2)$
+	- $Q^{max}_3 (k) = Q^{max}_3(k) −Q_3(k) = (5, 1, 1) − (0, 0, 1) = (5, 1, 0).$
+3. Mache Sicherheitsprüfung
+
+
+
+- $Q_3^{akt}(k)=(0,1,0)$
+
+1. $Qakt_3 (k) = (0, 1, 0) <= V(k) = (7, 5, 11)$
+2. Setze probehalber $V(k) = V(k) −Q3(k) = (7, 4, 11)$
+	- $H3(k) = H3(k) +Q3(k) = (2, 1, 1) + (0, 1, 0) = (2, 2, 1)$
+	- $Qmax3 (k) = Qmax(k) −Q3(k) = (5, 1, 1) − (0, 1, 0) = (5, 0, 1).$
+3. Mache Sicherheitsprüfung
