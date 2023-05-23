@@ -11,6 +11,13 @@ Stellen Sie die Situation aus der obigen Tabelle für den Zeitpunkt $t = 6$ anha
 
 **Lösung 5.1:**
 
+Die 4 Bedingungen eines Deadlocks sind:
+
+- Circular Wait: Jeder Prozess wartet auf einen anderen Prozess graph gesehen ist es ein Zykel (Alle Prozess sind blockiert)
+- Exclusive Use: Es gibt nur einen Exemplar für jedes Betriebsmittel, und dieses darf nur von einem Prozess gleichzeitig benutzt werden.
+- Hold and Wait: Wenn ein Prozess blockiert wird, dann lässt er die ihm zugewiesenen Betriebsmitteln, bis er nicht mehr blockiert ist, und für N Zeiteinheiten läuft
+- Non-Präemtiv: Der Prozess bestimmt selber wann er die Betriebsmitteln zurückgibt.
+
 Zunächst brauchen wir eine Hilfstabelle, hier findet ihr beide Tabellen, vom Tutorium und von der Musterlösung.
 
 *Musterlösung:* 
@@ -38,3 +45,13 @@ Zunächst brauchen wir eine Hilfstabelle, hier findet ihr beide Tabellen, vom Tu
 - groß geschrieben heißt P hat X
 - klein geschrieben heißt P braucht x aber x ist bei einem anderen Prozess schon.
 - Wenn ein Prozess ein x (also klein geschriebener Betriebsmittel) in seinen Spalte hat, dann ist dieser Prozess blockiert (blockiert ist wenn der Prozess *nichts* ausführt, entsprechend lässt er die anderen Betriebsmitteln, die er hat, nicht frei).
+
+Aus der Tabelle gelesen folgt der Graph:
+
+![[Pasted image 20230523225320.png]]
+
+- Aus dem Graph kann man sehen nach 6 Einheiten entsteht ein Kreis und alle Prozesse sind Blockiert (Circular wait)
+
+- (Exclusive Use): Folgt aus der Frage, es gibt nur jeweils ein Exemplar eines BM, der auch nur von einem Prozess benutzt werden kann
+- Außerdem aus der Frage: der Prozess setzt seine Arbeit nur dann fort, wenn ihm die angeforderten Bm zugewiesen worden sind (Hold and Wait).
+- (Non Preemption): Auch aus der Frage: Der Prozess bestimmt, das 
