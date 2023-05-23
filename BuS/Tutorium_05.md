@@ -122,5 +122,27 @@ a)
 Sicherheitsprüfung mit dem Banker-Algorithmus: 
 
 1. P1 ist erster unmarkierter Prozess.
-- Prüfe Qmax 1
-(k) = (5, 3, 5) <= V(k) = (7, 5, 11)
+- Prüfe $Q^{max}_1(k) = (5, 3, 5) <= V(k) = (7, 5, 11)$
+- Setze $V(k) := V(k) +H(k) = (7, 5, 11) + (0, 2, 1) = (7, 7, 12)$. Markiere P1.
+
+2. P2 ist nächster unmarkierter Prozess.
+- Prüfe $Q^{max}_2 (k) = (2, 3, 5) <= V(k) = (7, 7, 12)$
+- Setze $V(k) = V(k) +H(k) = (7, 7, 12) + (0, 2, 3) = (7, 9, 15)$. Markiere P2.
+
+3. P3 ist nächster unmarkierter Prozess.
+- Prüfe $Q^{max}_3 (k) = (5, 1, 1) <= V(k) = (7, 9, 15)$
+- Setze $V(k) = V(k) +H(k) = (7, 9, 15) + (2, 1, 1) = (9, 10, 16)$. Markiere P3.
+
+4. Alle $P_i$ sind markiert, also ist der Zustand sicher.
+
+b)
+
+Betriebsmittel-Zuteilung mit dem Banker-Algorithmus
+
+-  $Q_2^{akt}(k)=(0,2,0):$
+
+1. $Q^{akt}_2 (k) = (0, 2, 0) <= V(k) = (7, 5, 11)$
+2. Setze probehalber V(k) := V(k) −Q2(k) = (7, 3, 11)
+	- H2(k) := H2(k) +Q2(k) = (0, 2, 3) + (0, 2, 0) = (0, 4, 3) Qmax
+2
+(k) := Qmax(k) −Q2(k) = (2, 3, 5) − (0, 2, 0) = (2, 1, 5).
