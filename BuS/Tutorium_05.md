@@ -168,8 +168,26 @@ Betriebsmittel-Zuteilung mit dem Banker-Algorithmus
 
 - $Q_3^{akt}(k)=(0,1,0)$
 
-1. $Qakt_3 (k) = (0, 1, 0) <= V(k) = (7, 5, 11)$
-2. Setze probehalber $V(k) = V(k) −Q3(k) = (7, 4, 11)$
-	- $H3(k) = H3(k) +Q3(k) = (2, 1, 1) + (0, 1, 0) = (2, 2, 1)$
-	- $Qmax3 (k) = Qmax(k) −Q3(k) = (5, 1, 1) − (0, 1, 0) = (5, 0, 1).$
+1. $Q^{akt}_3 (k) = (0, 1, 0) <= V(k) = (7, 5, 11)$
+2. Setze probehalber $V(k) = V(k) −Q_3(k) = (7, 4, 11)$
+	- $H_3(k) = H_3(k) +Q_3(k) = (2, 1, 1) + (0, 1, 0) = (2, 2, 1)$
+	- $Q^{max}_3 (k) = Q^{max}_3(k)−Q_3(k) = (5, 1, 1) − (0, 1, 0) = (5, 0, 1).$
 3. Mache Sicherheitsprüfung
+
+
+Durch eine Sicherheitsprüfung der obigen Zustände wie unter a) stellt sich heraus, dass alle Zustände sicher sind.
+
+c)
+
+Der Algorithmus betrachtet nicht, zu welchem Zeitpunkt ein Betriebsmittel belegt und freigegeben werden kann. Er nimmt immer an dass alle Betriebsmitteln bis zum Ende gehalten werden, in der Realität ist dies aber nicht immer der Fall.
+
+Ein einfaches Beispiel für ein Schedule der keinen Deadlock produziert, obwohl der BA ihn als unsicher einstuft:
+
+Betrachte ein System, in dem $2$ Einheiten von $BM1$ und $2$ Einheiten von $BM2$ existieren. Für zwei Prozesse $P1$ und $P2$ gilt:
+$P1: Q^{max}_1 (2) = (1, 2), H_1(2) = (1, 0)$
+$P2: Q^{max}_2 (2) = (2, 1), H_2(2) = (0, 1)$
+Somit gilt: $V(2) = (1, 1).$
+
+Mit der Sicherheitsüberprüfung des Banker-Algorithmus ergibt sich hier, dass weder P1 noch P2 markiert werden können. Das System gilt also als unsicher.
+
+Anderseits könnte man für diese Prozesse einen Schedule angeben, in dem $P1$ zunächst seine Maximalanforderung von einer Einheit für $BM1$ stellt und anschließend beide Einheiten von $BM1$ freigibt. Danach kann $P2$ $2$ Einheiten von $BM1$ und $1$ Einheit von $BM2$ anfordern, zu Ende rechnen und alle gehaltenen $BM$ wieder freigeben. Daraufhin kann $P1$ $2$ Einheiten von $BM2$ anfordern und ebenfalls zu Ende rechnen. Dieser Schedule kommt also ohne Deadlock aus.
