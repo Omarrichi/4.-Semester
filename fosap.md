@@ -14,4 +14,8 @@ $$B \rightarrow \space0C\space|\space1C\space|\space(A)$$
 $$C \rightarrow \space+B\space|\space-B\space|\space(A)\space |\space\varepsilon$$
 
 b) Linksableitung für das Wort: $-1+1-(-(1+1))=$
-$S \rightarrow A= \rightarrow -B= \rightarrow -1C= \rightarrow -1+B= \rightarrow -1+1C= \rightarrow -1+1-B= \rightarrow -1+1-(A)= \rightarrow -1+1-(-B)= \rightarrow -1+1-(-(A))= \rightarrow -1+1-(-(1C))=$
+$S \space\rightarrow A= \space\rightarrow -B= \space\rightarrow -1C= \space\rightarrow -1+B= \space\rightarrow -1+1C= \space\rightarrow -1+1-B=$ 
+$\space\rightarrow -1+1-(A)= \space\rightarrow -1+1-(-B)= \space\rightarrow -1+1-(-(A))= \space\rightarrow -1+1-(-(1C))=$
+$\space\rightarrow -1+1-(-(1+B))= \space\rightarrow -1+1-(-(1+1C))= \space\rightarrow -1+1-(-(1+1))=$
+
+c)
