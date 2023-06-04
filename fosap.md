@@ -19,3 +19,16 @@ $\space\rightarrow -1+1-(A)= \space\rightarrow -1+1-(-B)= \space\rightarrow -1+1
 $\space\rightarrow -1+1-(-(1+B))= \space\rightarrow -1+1-(-(1+1C))= \space\rightarrow -1+1-(-(1+1))=$
 
 c)
+Die eingeschränkte Grammatik lautet:
+
+
+$G_2 = \{N,T,P,S\}$
+$N = \{S,A,B\}$
+$T = \{+,-,0,1,=\}$ 
+$S = S$
+$P:$
+$$S \rightarrow A=$$
+$$A \rightarrow \space0+A\space|\space-0A\space|\space+1A\space|\space-1AB\space | \space \epsilon$$
+$$B \rightarrow \space+1A\space$$
+
+d)
