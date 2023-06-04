@@ -32,3 +32,6 @@ $$A \rightarrow \space-0A\space|\space+0A\space|\space+1A\space|\space-1AB\space
 $$B \rightarrow \space+1A\space$$
 
 d)
+ep steht für $\varepsilon$
+
+![[Pasted image 20230604230659.png]]
