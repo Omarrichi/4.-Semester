@@ -35,3 +35,10 @@ d)
 ep steht für $\varepsilon$
 
 ![[Pasted image 20230604230659.png]]
+
+Erklärung der Grammatik:
+
+Zunächst Teil a):
+Das erste Grammatik beschreibt die Sprache der Afi-Aufgaben.
+Zunächst sichern wir, dass wir das Endzeichen an der richtigen Stelle haben, danach gucken wir was wir links machen wollen:
+Von S gehen wir in A über, dort können wir mit einem beliebigem Zeichen anfangen von dort aus, abhängig von dem Zeichen den wir genommen haben gehen wir entweder in B oder C über. Bei B und C gehen wir entsprechend der letzten Symbol, falls wir +/- genommen haben, gehen wir in B, dort können wir nur 0/1 schreiben. Analog für C aber umgekehrt. Zum Schluss kommen die Klammern, die können wir beliebig oft einsetzen sorgen aber jedesmal dafür, dass wenn eine aufgeht, dass auch zugeht. In die Klammern, ist eine "neue" Aufgabe, deswegen können wir dort mit einem beliebigen Zeichen anfangen. Enden kön
