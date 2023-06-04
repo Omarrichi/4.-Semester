@@ -151,6 +151,12 @@ Achsen
 AABABBBAAA
 Achse
 Ausführungsreihenfolge
+Algorithmus
+Anforderung
+Alternativen
+Argumentation
+Anderseits
+Afi
 VL
 Variabelen
 Vorwissen
@@ -238,6 +244,7 @@ Vr
 Verlauf
 Voraus
 Veranschaulichung
+Vektor
 ggf
 gleichzeitig
 gleichzeitige
@@ -349,6 +356,11 @@ geschrieben
 geschriebener
 gelesen
 gesichert
+genutzt
+gilt
+gesamten
+gehalten
+gehaltenen
 TU
 Tutorium
 Tastatur
@@ -523,6 +535,10 @@ Blockiert
 Betriebssystem
 Beendigung
 Bereiche
+Banker
+Beschreibung
+Bzw
+Betrachte
 Email
 Eingebettet
 Ereignissen
@@ -617,6 +633,10 @@ EcT
 Exclusive
 Eigene
 Einheiten
+Ergebnis
+Exemplare
+Er
+Einheit
 DB
 Dbis
 Die
@@ -720,6 +740,8 @@ Ds
 DOBj
 Done
 Diagramm
+Deadlockvermeidung
+Daraufhin
 Übung
 ÜB
 Übungsblatt
@@ -825,6 +847,11 @@ Schedule
 Status
 Schreiben
 Stelle
+Schlag
+Sicherheitsprüfung
+Setze
+Somit
+Sicherheitsüberprüfung
 UE
 Unix
 UNIX
@@ -962,6 +989,8 @@ FI
 FwE
 Folgt
 Frage
+Fall
+Für
 MaLo
 Multitasking
 Meta
@@ -1035,6 +1064,10 @@ MNx
 Mll
 Mu
 Musterlösung
+Markiere
+Mache
+Maximalanforderung
+Menge
 Gruppen
 Ggf
 Geräte
@@ -1095,6 +1128,7 @@ GOZ
 Gw
 GV
 Geben
+Grammatik
 Networks
 Nach
 NULL
@@ -1282,6 +1316,14 @@ exklusiv
 erfolgreiches
 exklusives
 erfolgreiche
+erfolgen
+entscheiden
+erfolge
+erster
+einfaches
+einstuft
+ergibt
+ebenfalls
 week
 wegen
 werden
@@ -1398,6 +1440,10 @@ ws
 wVv
 worden
 welchen
+wollen
+wenige
+welchem
+weder
 Quiz
 Qo
 QN
@@ -1537,6 +1583,10 @@ klein
 könnte
 koordinieren
 konkurrieren
+könnt
+korrekter
+keinen
+kontextfreie
 nur
 nacheinander
 nötig
@@ -1614,6 +1664,9 @@ nYmh
 neI
 nichts
 nutzende
+natürlich
+nächster
+nimmt
 Prozess
 Prozesse
 Programmcounter
@@ -1686,6 +1739,8 @@ Pqyk
 Preemption
 Prozessfortschrittsdiagramme
 Prozessfortschrittsdiagramm
+Prüfen
+Prüfe
 ausführern
 ausführung
 abfolge
@@ -1787,6 +1842,10 @@ anhand
 and
 angeforderten
 allerdings
+ausgehend
+abgelehnt
+anfordern
+aller
 von
 vor
 vorher
@@ -1883,6 +1942,10 @@ vorliegt
 vollständig
 vollständige
 verboten
+vertauschen
+vorgestellten
+verwernde
+verursachen
 mehreren
 mehrere
 man
@@ -1962,6 +2025,7 @@ mg
 mitteilen
 möglich
 markieren
+markiert
 durch
 durchlaufen
 damit
@@ -2050,6 +2114,9 @@ dar
 dort
 dabei
 darüber
+daran
+dürften
+daraus
 Interrupts
 ISR
 Interrupt
@@ -2288,6 +2355,7 @@ Zur
 Zeiträume
 Zu
 Zustände
+Zum
 ist
 im
 in
@@ -2370,6 +2438,8 @@ ihm
 ihrer
 ihren
 ihn
+immer
+informelle
 schnelle
 so
 sind
@@ -2473,6 +2543,11 @@ späteren
 seien
 sicher
 sequentieller
+solange
+sicheren
+solch
+schließen
+stellt
 höhen
 hat
 hergestellt
@@ -2556,6 +2631,8 @@ heißt
 hervorgehoben
 hervor
 hinaus
+hält
+heraus
 Rechen
 Routine
 Register
@@ -2630,6 +2707,7 @@ RX
 RHm
 Rs
 RSS
+Realität
 und
 uns
 unterbrochenen
@@ -2698,6 +2776,7 @@ unbedingt
 unvermeidlich
 unsicher
 unmöglich
+unmarkierter
 Wechselgeschwindigkeit
 Wenn
 Welt
@@ -2773,6 +2852,7 @@ Wz
 WsV
 Wait
 Wollen
+Weiterhin
 bis
 befinden
 bekommen
@@ -2863,6 +2943,9 @@ benutzen
 beider
 beanspruchen
 bereits
+betrachteten
+betrachtet
+belegt
 jeden
 ja
 je
@@ -3008,6 +3091,13 @@ fI
 frei
 fort
 farblich
+freier
+führen
+fordere
+freigegeben
+freigibt
+freigeben
+folgermaßen
 Kontext
 Kommunikation
 Kontrolle
@@ -3084,6 +3174,8 @@ Kjh
 KRE
 KO
 Kreis
+Kann
+Korrekten
 resettet
 richi
 rwth
@@ -3148,6 +3240,8 @@ rY
 rmV
 rO
 reB
+reicht
+rechnen
 Hardware
 HardwareInterrupt
 Hilfe
@@ -3759,6 +3853,8 @@ pR
 pj
 pIDATx
 pUN
+probehalber
+produziert
 xb
 xYKKK
 xqH
