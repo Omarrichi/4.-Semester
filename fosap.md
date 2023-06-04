@@ -28,7 +28,7 @@ $T = \{+,-,0,1,=\}$
 $S = S$
 $P:$
 $$S \rightarrow A=$$
-$$A \rightarrow \space0+A\space|\space-0A\space|\space+1A\space|\space-1AB\space | \space \epsilon$$
+$$A \rightarrow \space-0A\space|\space+0A\space|\space+1A\space|\space-1AB\space | \space \epsilon$$
 $$B \rightarrow \space+1A\space$$
 
 d)
