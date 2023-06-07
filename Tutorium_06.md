@@ -45,4 +45,55 @@ Für die Speicherverwaltung nach dem Segmentierungsverfahren sei für einen Proz
 |    0    |     1320     |  320  |
 |    1    |     562      |  58   |
 |    2    |     310      |  120  |
-|  3750   |              |       |
+|    3    |     750      |  60   |
+|    4    |     830      |  150  |
+|    5    |     990      |  110  |
+
+Sowohl Basisadresse als auch Länge seien in Byte angegeben.
+
+a) Wie viele Byte stehen dem Prozess im physikalischen Speicher zur Verfügung?
+
+b) Die folgenden logischen Adressen werden nun von dem Prozess angefragt. Was würde die MMU jeweils zurückgeben?
+
+1. (3,30)
+2. (1,18)
+3. (2,122)
+4. (4,149)
+
+**Lösung:**
+
+a) Aussummieren der Einträge der Spalte "Länge": 
+$320+58+120+60+150+110= 818$
+
+b) 
+
+1. (3,30) : 780
+	1.  Segment 3 und Offset 30. Wir prüfen, dass der Offset die Länge nicht überschreitet wenn ja dann Segmentation Fault, wenn nein, dann Basisadresse + Offset zurückgeben.
+2. (1,18): 580
+3. (2,122): Offset $\geq$ Länge, die MMU würde den Zugriff unterbinden und ein Seg. Fault würde auftreten
+4. (4,149): 979
+
+#### Aufgabe 6.3 Buddysystem:
+
+Gegeben sei ein Rechner mit einem Hauptspeicher von 32 MByte. Der Hauptspeicher werde mit einem gewichteten Buddy-System verwaltet. In diesem System erfolgen nun in der angegebenen Reihenfolge
+Speicheranforderungen und -freigaben:
+
+| Nr. |  Operation  | Name | Größe in MByte |
+|:---:|:-----------:|:----:|:--------------:|
+|  1  | Anforderung |  A   |       8        |
+|  2  | Anforderung |  B   |       12       | 
+|  3  | Anforderung |  C   |       8        |
+|  4  |  Freigabe   |  A   |                |
+|  5  | Anforderung |  D   |       4        |
+|  6  | Anforderung |  E   |       5        |
+|  7  |  Freigabe   |  D   |                |
+|  8  | Anforderung |  F   |       3        |
+
+Führen Sie die Operationen, die in der obigen Tabelle angegeben sind, mittels eines gewichteten BuddySystems durch. Halten Sie den Zustand des Hauptspeichers nach jeder Operation in Form eines binären Baums fest. Falls möglich, werden Knoten im Verhältnis 1 : 2 geteilt, sonst 1 : 3. Bei der Wahl zwischen zwei gleichberechtigten Ästen wählen Sie stets den linken aus. Ordnen Sie ihren binären Baum so, dass sich kleine Werte links und große Werte rechts befinden.
+Warum eignen sich Buddy-Systeme für die Speicherverwaltung?
+
+**Lösung:**
+
+![[Pasted image 20230607223636.png]]
+
+Buddy-Systeme teilen freie Speicherbereiche in feste, bekannte Größen ein
