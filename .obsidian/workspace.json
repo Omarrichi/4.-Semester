@@ -19,8 +19,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "c5f193f1f33b4b80",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "b8032abb3fb97466",
@@ -192,7 +203,7 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "c32ea49db55a3af4",
+  "active": "c5f193f1f33b4b80",
   "lastOpenFiles": [
     "Pasted image 20230604230659.png",
     "BuS/Tutorium_05.md",
