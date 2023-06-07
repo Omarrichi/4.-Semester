@@ -868,6 +868,7 @@ Sprache
 Symbol
 Schluss
 Schritt
+Speicherverwaltung
 UE
 Unix
 UNIX
