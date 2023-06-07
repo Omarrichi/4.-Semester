@@ -158,3 +158,17 @@ d) Warum ist es nicht sinnvoll, sehr komplexe Algorithmen zu entwickeln, um die 
 
 a) 
 - Ja und nein
+	- selbe physikalische Adresse
+	- Prozesse haben eigenen logischen Adressraum
+	- kann passieren durch Zufall
+
+b)
+- Falls die Seite aus dem RAM verdrängt wird, muss sie nicht zwingend wieder auf die Festplatte geschrieben werden.
+
+c) 
+- Kein unnötiges Kopieren, wenn nur gelesen wird.
+- Die Prozesserzeugung wird beschleunigt, da wir nur die Page Table kopieren müssen.
+
+d) 
+- Sehr komplexe Algorithmen brauchen auch sehr viel Zeit zur Ausführung.
+- Rechenaufwand kann großer werden als das Verdrängen und Laden einer beliebigen Seite

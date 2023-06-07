@@ -4,28 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "71aab04bf13b4e0c",
-        "type": "tabs",
-        "dimension": 48.79441624365482,
-        "children": [
-          {
-            "id": "1a9955d5e3a986f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tutorium_06.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "b8032abb3fb97466",
         "type": "tabs",
-        "dimension": 51.20558375634518,
         "children": [
           {
             "id": "dd0b69d8c2e5d253",
@@ -33,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutorium_06.md",
+                "file": "Abgaben Tracker.md",
                 "mode": "preview",
                 "source": true
               }
@@ -113,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tutorium_06.md",
+                "file": "Abgaben Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tutorium_06.md",
+                "file": "Abgaben Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutorium_06.md"
+                "file": "Abgaben Tracker.md"
               }
             }
           },
@@ -192,14 +172,14 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "1a9955d5e3a986f8",
+  "active": "dd0b69d8c2e5d253",
   "lastOpenFiles": [
-    "fosap.md",
-    "Tutorium_06.md",
-    "Pasted image 20230607223636.png",
-    "BuS/Tutorium_05.md",
-    "Pasted image 20230604230659.png",
+    "BuS/Tutorium_06.md",
     "Abgaben Tracker.md",
+    "Pasted image 20230607223636.png",
+    "Pasted image 20230604230659.png",
+    "fosap.md",
+    "BuS/Tutorium_05.md",
     "Photos/Pasted image 20230523225320.png",
     "Photos/Pasted image 20230523230715.png",
     "Photos/Pasted image 20230523231738.png",
