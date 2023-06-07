@@ -123,3 +123,20 @@ Externe Fragmentierung:
 	- jedoch die Reihenfolge der Segmente und die Positionierung im Speicher, kann dazu führen, dass zwischen den Segmente Lücken entstehen, die zu klein sind.
 	- Ein Prozess kann Speicheranfragen, der in der Tat frei ist auch, aber der freie Speicher ist in Lücken unterteilt zwischen den Segmente, deswegen kann der Prozess keinen Speicher bekommen.
 
+
+**Lösung:**
+
+- Paging mit Seiten von 4 Byte Größe
+	- Eine Seite ist s = $2^2$ Byte groß
+	- Also $\frac{n}{s} = \frac{2^{64}}{2^2} = 2^{62}$ Einträge in der Tabelle
+	- Speicher ist nicht groß genug, wir müssen mehrstufige Tabellen benutzen (7 Stufen)
+	- Zu viele Stufen, Verzögerung für die Adressumsetzung
+
+- Paging mit Seiten von 256 MiB Größe
+	- Verwaltungsaufwand deutlich gringer
+	- Seitentabelle hat $2^{36}$ Einträge, Mit drei oder vierstufigen Paging ginge das noch
+	- Externer Fragmentierung ist ein großes Problem hier
+
+-  Segmentierung mit Best Fit Strategie:
+- Verwaltungsaufwand im Mittel
+- externe 
