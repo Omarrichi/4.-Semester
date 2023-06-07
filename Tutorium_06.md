@@ -98,10 +98,18 @@ Warum eignen sich Buddy-Systeme für die Speicherverwaltung?
 
 #### Aufgabe 6.4 Segmentierung vs. Paging:
 
-Allgemein:
+geben sei ein PC mit 16 GiB Hauptspeicher und 64 Bit Adressraum. Sie überlegen, ob Sie Segmentierung oder Paging einsetzen sollen. Zur Auswahl stehen:
+
+- Paging mit Seiten von 4 Byte Größe
+- Paging mit Seiten von 256 MiB Größe
+- Segmentierun mit Best Fit als Strategie zur Suche nach freiem Speicher
+
+Welche Vor- und Nachteile haben die drei Varianten in Bezug auf Verwaltungsaufwand, interne Fragmentierung und externe Fragmentierung?
+
+*Allgemein:*
 
 - Adressraum k Bit: $n = 2^k$ mögliche logische Adressen (hier: $2^{64}$)
-- Adressen werden in Seiten der Größe n unterteilt: $\frac{n}{s}$
+- Adressen werden in Seiten der Größe s unterteilt: $\frac{n}{s}$
 - Seiten werden in Rahmen der Größe h gelegt: $\frac{h}{s}$ 
 
 Interne Fragmentierung: 
@@ -112,3 +120,6 @@ Interne Fragmentierung:
 Externe Fragmentierung: 
 - Tritt bei Segmentation auf:
 	- Die Segments sind nicht fest, die können beliebig groß sein, also jeder Prozess bekommt genau so viel wie er braucht
+	- jedoch die Reihenfolge der Segmente und die Positionierung im Speicher, kann dazu führen, dass zwischen den Segmente Lücken entstehen, die zu klein sind.
+	- Ein Prozess kann Speicheranfragen, der in der Tat frei ist auch, aber der freie Speicher ist in Lücken unterteilt zwischen den Segmente, deswegen kann der Prozess keinen Speicher bekommen.
+
