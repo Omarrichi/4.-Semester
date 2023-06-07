@@ -133,10 +133,28 @@ Externe Fragmentierung:
 	- Zu viele Stufen, Verzögerung für die Adressumsetzung
 
 - Paging mit Seiten von 256 MiB Größe
-	- Verwaltungsaufwand deutlich gringer
+	- Verwaltungsaufwand deutlich geringer
 	- Seitentabelle hat $2^{36}$ Einträge, Mit drei oder vierstufigen Paging ginge das noch
-	- Externer Fragmentierung ist ein großes Problem hier
+	- interne Fragmentierung
 
 -  Segmentierung mit Best Fit Strategie:
-- Verwaltungsaufwand im Mittel
-- externe 
+	- Verwaltungsaufwand im Mittel
+	- externe Fragmentierung
+
+Fazit: Es gibt keine optimale Lösung, in der Praxis mittelgroße Seitengroße Seitengrößen werden gewählt, und Implementierung wird mit Segmentierung vermischt.
+
+
+#### Aufgabe 6.5 Speicherverwaltung:
+
+a) Zwei Prozesse verwenden ein Shared Memory zur Kommunikation. Verwenden beide Prozesse die gleichen logischen Adressen, um auf das Shared Memory zuzugreifen?
+
+b) Welchen Vorteil für die Speicherverwaltung hat es, vorzuhalten, ob eine Seite bisher nur gelesen wurde?
+
+c) Welchen Vorteil hat ein Copy-on-Write bei der Erzeugung eines Kindprozesses mittels fork?
+
+d) Warum ist es nicht sinnvoll, sehr komplexe Algorithmen zu entwickeln, um die Seitenfehlerrate zu verringern?
+
+**Lösung:**
+
+a) 
+- Ja und nein
