@@ -96,4 +96,19 @@ Warum eignen sich Buddy-Systeme für die Speicherverwaltung?
 
 ![[Pasted image 20230607223636.png]]
 
-Buddy-Systeme teilen freie Speicherbereiche in feste, bekannte Größen ein
+#### Aufgabe 6.4 Segmentierung vs. Paging:
+
+Allgemein:
+
+- Adressraum k Bit: $n = 2^k$ mögliche logische Adressen (hier: $2^{64}$)
+- Adressen werden in Seiten der Größe n unterteilt: $\frac{n}{s}$
+- Seiten werden in Rahmen der Größe h gelegt: $\frac{h}{s}$ 
+
+Interne Fragmentierung: 
+- Tritt bei Paging auf: 
+	- Der Seiten haben eine feste Größe, wenn ein Prozess wenig Speicher braucht, bekommt er trotzdem eine komplette Seite, obwohl sie viel großer ist, als was er wirklich braucht
+	- Der unbenutzte Speicher in dieser Seite wird dann verloren
+
+Externe Fragmentierung: 
+- Tritt bei Segmentation auf:
+	- Die Segments sind nicht fest, die können beliebig groß sein, also jeder Prozess bekommt genau so viel wie er braucht
