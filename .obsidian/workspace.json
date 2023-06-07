@@ -21,12 +21,14 @@
             }
           },
           {
-            "id": "c5f193f1f33b4b80",
+            "id": "1a9955d5e3a986f8",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.5"
+                "file": "Tutorium_06.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
@@ -124,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fosap.md",
+                "file": "Tutorium_06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fosap.md",
+                "file": "Tutorium_06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fosap.md"
+                "file": "Tutorium_06.md"
               }
             }
           },
@@ -203,11 +205,12 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "c5f193f1f33b4b80",
+  "active": "1a9955d5e3a986f8",
   "lastOpenFiles": [
-    "Pasted image 20230604230659.png",
     "BuS/Tutorium_05.md",
+    "Tutorium_06.md",
     "fosap.md",
+    "Pasted image 20230604230659.png",
     "Abgaben Tracker.md",
     "Photos/Pasted image 20230523225320.png",
     "Photos/Pasted image 20230523230715.png",
@@ -221,7 +224,6 @@
     "Photos/Pasted image 20230518155933.png",
     "Photos/Pasted image 20230518155923.png",
     "Photos/Pasted image 20230518155809.png",
-    "Photos/Pasted image 20230518155623.png",
     "BuS/Tutorium_01.md",
     "BuS/Tut 1.md",
     "TO Do.md",

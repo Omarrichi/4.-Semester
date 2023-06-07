@@ -157,6 +157,8 @@ Alternativen
 Argumentation
 Anderseits
 Afi
+Analog
+Aber
 VL
 Variabelen
 Vorwissen
@@ -245,6 +247,8 @@ Verlauf
 Voraus
 Veranschaulichung
 Vektor
+Von
+Vorraussetzung
 ggf
 gleichzeitig
 gleichzeitige
@@ -361,6 +365,9 @@ gilt
 gesamten
 gehalten
 gehaltenen
+gucken
+genommen
+gezungen
 TU
 Tutorium
 Tastatur
@@ -441,6 +448,7 @@ TS
 Tabellen
 Tragen
 Teil
+Terminalalphabet
 BuS
 Benutzer
 Betriebssystemgrundlagen
@@ -637,6 +645,9 @@ Ergebnis
 Exemplare
 Er
 Einheit
+Endzeichen
+Enden
+Ergebniss
 DB
 Dbis
 Die
@@ -745,6 +756,7 @@ Daraufhin
 Übung
 ÜB
 Übungsblatt
+Übergang
 Stocha
 Systeme
 Social
@@ -852,6 +864,10 @@ Sicherheitsprüfung
 Setze
 Somit
 Sicherheitsüberprüfung
+Sprache
+Symbol
+Schluss
+Schritt
 UE
 Unix
 UNIX
@@ -1324,6 +1340,11 @@ einfaches
 einstuft
 ergibt
 ebenfalls
+eingeschränkte
+entweder
+einsetzen
+enden
+eingeschränkter
 week
 wegen
 werden
@@ -1444,6 +1465,7 @@ wollen
 wenige
 welchem
 weder
+wirklich
 Quiz
 Qo
 QN
@@ -1667,6 +1689,8 @@ nutzende
 natürlich
 nächster
 nimmt
+neue
+nud
 Prozess
 Prozesse
 Programmcounter
@@ -1846,6 +1870,10 @@ ausgehend
 abgelehnt
 anfordern
 aller
+anfangen
+abhängig
+aufgeht
+auchgeschrieben
 von
 vor
 vorher
@@ -2026,6 +2054,7 @@ mitteilen
 möglich
 markieren
 markiert
+minus
 durch
 durchlaufen
 damit
@@ -2117,6 +2146,9 @@ darüber
 daran
 dürften
 daraus
+danach
+deswegen
+dazwischen
 Interrupts
 ISR
 Interrupt
@@ -2278,6 +2310,9 @@ lsJ
 laNZ
 lässt
 läuft
+lautet
+links
+letzten
 Ziel
 Zunächst
 Zuständen
@@ -2356,6 +2391,10 @@ Zeiträume
 Zu
 Zustände
 Zum
+Zeichen
+Ziffer
+Zeil
+Zwischenzeichen
 ist
 im
 in
@@ -2548,6 +2587,8 @@ sicheren
 solch
 schließen
 stellt
+sichern
+sofort
 höhen
 hat
 hergestellt
@@ -2633,6 +2674,7 @@ hervor
 hinaus
 hält
 heraus
+hinzufügen
 Rechen
 Routine
 Register
@@ -2777,6 +2819,7 @@ unvermeidlich
 unsicher
 unmöglich
 unmarkierter
+umgekehrt
 Wechselgeschwindigkeit
 Wenn
 Welt
@@ -2946,6 +2989,10 @@ bereits
 betrachteten
 betrachtet
 belegt
+beschreibt
+beliebigem
+beliebig
+beliebigen
 jeden
 ja
 je
@@ -3004,6 +3051,7 @@ jhs
 jJ
 jL
 jemals
+jedesmal
 fast
 festgehalten
 freigeschaltet
@@ -3176,6 +3224,7 @@ KO
 Kreis
 Kann
 Korrekten
+Klammern
 resettet
 richi
 rwth
@@ -3242,6 +3291,7 @@ rO
 reB
 reicht
 rechnen
+richtigen
 Hardware
 HardwareInterrupt
 Hilfe
@@ -3566,6 +3616,7 @@ Lo
 Liegt
 Laufzeit
 Laufzeiten
+Linksableitung
 tatsächliche
 tun
 tritt
@@ -3774,6 +3825,7 @@ zeitlichen
 zehn
 zuzugreifen
 zeichnen
+zugeht
 über
 übergeben
 überspringt
@@ -3855,6 +3907,8 @@ pIDATx
 pUN
 probehalber
 produziert
+passieren
+positives
 xb
 xYKKK
 xqH
