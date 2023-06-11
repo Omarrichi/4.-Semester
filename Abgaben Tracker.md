@@ -33,7 +33,9 @@
 ---
 
 **Dbis**
-- [ ] Abgabe ÜB 🔁 every week 📅 2023-05-30
+- [ ] Abgabe ÜB 🔁 every week 📅 2023-06-13
+- [x] Abgabe ÜB 🔁 every week 📅 2023-06-06 ✅ 2023-06-07
+- [x] Abgabe ÜB 🔁 every week 📅 2023-05-30 ✅ 2023-06-07
 - [x] Abgabe ÜB 🔁 every week 📅 2023-05-23 ✅ 2023-05-23
 - [x] Abgabe ÜB 🔁 every week 📅 2023-05-16 ✅ 2023-05-23
 - [x] Abgabe ÜB 🔁 every week 📅 2023-05-09 ✅ 2023-05-23

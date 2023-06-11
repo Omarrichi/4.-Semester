@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abgaben Tracker.md",
+                "file": "BuS/Tutorium_06.md",
                 "mode": "preview",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Abgaben Tracker.md",
+                "file": "BuS/Tutorium_06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Abgaben Tracker.md",
+                "file": "BuS/Tutorium_06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Abgaben Tracker.md"
+                "file": "BuS/Tutorium_06.md"
               }
             }
           },
@@ -174,8 +174,8 @@
   },
   "active": "dd0b69d8c2e5d253",
   "lastOpenFiles": [
-    "BuS/Tutorium_06.md",
     "Abgaben Tracker.md",
+    "BuS/Tutorium_06.md",
     "Pasted image 20230607223636.png",
     "Pasted image 20230604230659.png",
     "fosap.md",
