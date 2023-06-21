@@ -65,6 +65,14 @@ vi) Installation einer schnelleren Festplatte
 
 ### Aufgabe 7.2: Demand Paging
 
+```ad-abstract
+title: Zusammenfassung
+unten ist eine Wand Text, hier ist eine kleine Zusammenfassung:
+Wir wollen Seiten laden, es gibt insgesamt 7 Seiten [0,1,2,3,4,5,6]
+```
+
+
+
 In der Vorlesung haben Sie das Prinzip des Pagings kennengelernt: der Adressraum eines Prozesses wird in Seiten (Pages) fester Größe eingeteilt, der Hauptspeicher in Rahmen der gleichen Gröÿe, welche jeweils eine Seite aufnehmen können. Die Zahl der Rahmen im Hauptspeicher ist im Allgemeinen kleiner als die Anzahl der tatsächlich im System existierenden Seiten. Seiten, die gerade nicht im Hauptspeicher gehalten werden können, werden auf ein externes Speichermedium ausgelagert. Befindet sich eine Seite nicht im Hauptspeicher, wenn auf sie zugegriffen werden soll, muss sie zuvor vom externen Speicher in den Hauptspeicher geladen werden (Seitenfehler, Page Fault). Sind noch nicht alle Rahmen im Hauptspeicher gefüllt, stellt dies kein Problem dar. Ist jedoch kein Platz mehr vorhanden, muss eine Seite im Hauptspeicher ausgewählt werden, die ausgelagert und durch die neue Seite ersetzt wird. Für die Auswahl der zu ersetzenden Seite gibt es verschiedene Strategien, unter anderem:
 
 **FIFO (First In, First Out):** Die jeweils älteste Seite wird aus dem Hauptspeicher ausgelagert.
@@ -74,8 +82,10 @@ In der Vorlesung haben Sie das Prinzip des Pagings kennengelernt: der Adressraum
 **SC (Second Chance):** Diese Strategie ist eine Vereinfachung von LRU. Pro Seite wird ein ACCESSED Bit gespeichert, welches gesetzt wird, wenn auf eine bereits geladene Seite ein weiterer Zugriff erfolgt. Muss eine Seite ersetzt werden, wird die älteste Seite geprüft: ist ihr A-Bit nicht gesetzt, wird sie verdrängt; ist ihr A-Bit gesetzt, wird sie zur jüngsten Seite und ihr A-Bit wird zurückgesetzt - nun wird erneut die jetzt älteste Seite überprüft. Dies geschieht so lange, bis eine Seite verdrängt wurde.
 
 **LFU (Least Frequently Used):** Es wird die Seite mit der geringsten Nutzungshäufigkeit ausgetauscht. Die Nutzungshäufgkeit bezieht sich dabei auf ein Zeitintervall der jüngsten Vergangenheit. Für diese Aufgabe wird angenommen, dass die Nutzungshäufigkeit jeweils ab dem Ladezeitpunkt einer Seite gezählt wird. Liegt für mehrere Seiten die gleiche Nutzungshäufigkeit vor, wird die älteste dieser Seiten zuerst ausgetauscht.
-CLIMB: Wird eine Seite geladen, wird sie als 'älteste' Seite vermerkt. Wie bei FIFO erfolgt stets eine Verdrängung der ältesten Seite. Eine Seite muss sich zuerst bewähren, um länger im Speicher verbleiben zu können: erfolgt ein erneuter Zugri auf eine Seite, während sie bereits im Speicher ist, wird sie um eine Position verjüngt, also bezüglich ihres Alters mit der nächstjüngeren Seite getauscht.
-OPT (Optimalstrategie): Diese Strategie ersetzt die Seite, die am längsten nicht mehr benötigt wird. Wird eine Seite in Zukunft gar nicht mehr benötigt, wird sie auf die Stelle mit niedrigster Priorität gesetzt.
-Seitenzugrie werden hier als Referenzstring angegeben, welcher die zeitliche Reihenfolge der angeforderten Seiten enthält. Ein solcher String ist z.B. ω = 0 1 2 3 4 1 5 5 2 4 5 1 1 0 6 2 5 2 3 5 : Erst erfolgt ein Zugri auf Seite 0, dann auf Seite 1, dann auf Seite 2 usw.. Seitennummern seien hier immer einstellig.
-Gegeben sei ein System mit vier Rahmen, die zu Beginn leer sind. Geben Sie für jede der oben aufgeführten Strategien die Belegung dieser vier Rahmen nach jedem Seitenzugri sowie die Anzahl der auftretenden Seitenfehler an. Legen Sie dabei den oben angegebenen Referenzstring zugrunde. Geben
-Sie die Belegung jeweils in einer Tabelle der folgenden Form an:
+
+**CLIMB:** Wird eine Seite geladen, wird sie als 'älteste' Seite vermerkt. Wie bei FIFO erfolgt stets eine Verdrängung der ältesten Seite. Eine Seite muss sich zuerst bewähren, um länger im Speicher verbleiben zu können: erfolgt ein erneuter Zugriff auf eine Seite, während sie bereits im Speicher ist, wird sie um eine Position verjüngt, also bezüglich ihres Alters mit der nächstjüngeren Seite getauscht.
+
+**OPT (Optimalstrategie):** Diese Strategie ersetzt die Seite, die am längsten nicht mehr benötigt wird. Wird eine Seite in Zukunft gar nicht mehr benötigt, wird sie auf die Stelle mit niedrigster Priorität gesetzt.
+Seitenzugriffe werden hier als Referenzstring angegeben, welcher die zeitliche Reihenfolge der angeforderten Seiten enthält. Ein solcher String ist z.B. ω = 0 1 2 3 4 1 5 5 2 4 5 1 1 0 6 2 5 2 3 5 : Erst erfolgt ein Zugriff auf Seite 0, dann auf Seite 1, dann auf Seite 2 usw.. Seitennummern seien hier immer einstellig.
+
+Gegeben sei ein System mit vier Rahmen, die zu Beginn leer sind. Geben Sie für jede der oben aufgeführten Strategien die Belegung dieser vier Rahmen nach jedem Seitenzugriff sowie die Anzahl der auftretenden Seitenfehler an. Legen Sie dabei den oben angegebenen Referenzstring zugrunde.
