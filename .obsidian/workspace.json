@@ -18,8 +18,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "91f9c44b2bdc7656",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BuS/Tutorium_07.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BuS/Tutorium_06.md",
+                "file": "BuS/Tutorium_07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BuS/Tutorium_06.md",
+                "file": "BuS/Tutorium_07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BuS/Tutorium_06.md"
+                "file": "BuS/Tutorium_07.md"
               }
             }
           },
@@ -172,10 +185,12 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "dd0b69d8c2e5d253",
+  "active": "91f9c44b2bdc7656",
   "lastOpenFiles": [
-    "Abgaben Tracker.md",
     "BuS/Tutorium_06.md",
+    "BuS/Tutorium_07.md",
+    "BuS/Tutorium_01.md",
+    "Abgaben Tracker.md",
     "Pasted image 20230607223636.png",
     "Pasted image 20230604230659.png",
     "fosap.md",
@@ -191,7 +206,6 @@
     "BuS/Tutorium_04.md",
     "Photos/Pasted image 20230518155933.png",
     "Photos/Pasted image 20230518155923.png",
-    "BuS/Tutorium_01.md",
     "BuS/Tut 1.md",
     "TO Do.md",
     "Organische Chemie/1..md",
