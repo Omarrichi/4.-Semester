@@ -197,6 +197,7 @@ Aqm
 ADDif
 ADDDDDDDN
 ADD
+Allgemeines
 VL
 Variabelen
 Vorwissen
@@ -307,6 +308,8 @@ VX
 Vcksgp
 VLw
 VcBX
+Verspätung
+Vermeiden
 ggf
 gleichzeitig
 gleichzeitige
@@ -439,6 +442,8 @@ gsl
 gp
 gRe
 gZEV
+geschieht
+ggfs
 TU
 Tutorium
 Tastatur
@@ -535,6 +540,8 @@ Twl
 TY
 TcJ
 TE
+Tut
+Thema
 BuS
 Benutzer
 Betriebssystemgrundlagen
@@ -650,6 +657,8 @@ BF
 BDDD
 BO
 BBB
+Blatt
+Behandlungsroutine
 Email
 Eingebettet
 Ereignissen
@@ -762,6 +771,7 @@ EG
 Ewu
 Ed
 EZH
+Einsicht
 DB
 Dbis
 Die
@@ -874,6 +884,9 @@ DFhh
 DDi
 DDDDDD
 DDDd
+DSAL
+Dieses
+Daten
 Übung
 ÜB
 Übungsblatt
@@ -1029,6 +1042,7 @@ SNIx
 Sly
 Sy
 STF
+Seitenfehler
 UE
 Unix
 UNIX
@@ -1190,6 +1204,7 @@ FQY
 FoI
 FkU
 FN
+Fehlende
 MaLo
 Multitasking
 Meta
@@ -1426,6 +1441,7 @@ NI
 Name
 NAb
 NV
+Notizen
 every
 einen
 einzigen
@@ -1562,6 +1578,9 @@ eZO
 eu
 eD
 em
+etwas
+exisitert
+einiges
 week
 wegen
 werden
@@ -1856,6 +1875,8 @@ ky
 kWB
 ktD
 kVs
+komplex
+konnten
 nur
 nacheinander
 nötig
@@ -1946,6 +1967,8 @@ ne
 nS
 nP
 nfO
+nötigen
+nachgeladen
 Prozess
 Prozesse
 Programmcounter
@@ -2034,6 +2057,8 @@ PFJ
 PLt
 PI
 Pz
+Platz
+Physikalisch
 ausführern
 ausführung
 abfolge
@@ -2152,6 +2177,8 @@ aHL
 aCw
 aCIiM
 aLL
+ausführlicher
+ausgeführten
 von
 vor
 vorher
@@ -2270,6 +2297,9 @@ vh
 vbjmPb
 vDg
 vB
+verhindert
+vortritt
+verbringen
 mehreren
 mehrere
 man
@@ -2361,6 +2391,8 @@ mkg
 moOJ
 mwi
 maW
+mir
+mich
 durch
 durchlaufen
 damit
@@ -2648,6 +2680,9 @@ lC
 lqHM
 laZ
 lhh
+leid
+legen
+lokalisiert
 Ziel
 Zunächst
 Zuständen
@@ -2958,6 +2993,7 @@ sS
 seJ
 sG
 sDDDDD
+schlafen
 höhen
 hat
 hergestellt
@@ -3055,6 +3091,7 @@ hhe
 hQO
 hZ
 ha
+habe
 Rechen
 Routine
 Register
@@ -3686,6 +3723,7 @@ KDD
 KM
 KDDD
 KR
+Kapitels
 resettet
 richi
 rwth
@@ -3851,6 +3889,7 @@ HDX
 HLD
 Hpp
 Hdd
+Handler
 counter
 close
 cG
@@ -4151,6 +4190,7 @@ LLd
 Lk
 LTT
 Ll
+Logisch
 tatsächliche
 tun
 tritt
@@ -4236,6 +4276,7 @@ tc
 ty
 tOro
 tkxo
+tatsächlich
 Jede
 Ju
 JQvv
@@ -4303,6 +4344,7 @@ JP
 Jtt
 JD
 Jk
+Jedoch
 zusehen
 zugegriffen
 zurückgegeben
