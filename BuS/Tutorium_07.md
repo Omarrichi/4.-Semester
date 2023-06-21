@@ -23,7 +23,36 @@ Wenn ein Prozess ausgeführt wird, werden entsprechend seine Daten geladen dies 
 
 ### Aufgabe 7.1: Paging
 
+```ad-note
+title:Allgemein
 
-*Allgemein:*
+Demand-Paging: beschreibt das System Speicher zu verwalten, sodass Speicher nur dann zugegriffen wird, wenn es gebraucht ist. Auf unserem System, holen wir uns also nur die Seiten die wir brauchen, und verdrängen die, die wir nicht mehr brauchen würden.
+Das System ist nicht optimal implementierbar, da man nicht wissen kann, wann welche Seite angefragt werden wird, deswegen behandeln wir Allgemein, Strategien um eine Approximation zu erreichen.
+```
 
-Demand-Paging: bescher
+Gegeben sei ein Demand-Paging-System, das aktuell wie folgt ausgelastet ist:
+
+- CPU-Auslastung: 20%
+- Auslastung des Zugris auf die Paging-Disk (d.h. die Festplatte, auf die der virtueller Speicher ausgelagert ist): 97,7%
+- Auslastung der sonstigen I/O-Geräte: 5%
+
+Ziel sollte aber eigentlich sein, die CPU so gut wie möglich auszulasten, um alle Programme schnell abzuarbeiten! Geben Sie für jeden der folgenden Vorschläge mit Begründung an, ob er sich eignen
+würde, die Auslastung ihrer CPU zu verbessern (d.h. zu erhöhen):
+
+i) Installation einer schnelleren CPU
+
+ii) Installation einer größeren Festplatte
+
+iii) Erhöhung der Anzahl laufender Prozesse
+
+iv) Verringerung der Anzahl laufender Prozesse
+
+v) Installation von mehr Hauptspeicher
+
+vi) Installation einer schnelleren Festplatte
+
+**Lösung:**
+
+1. hilft nicht, unser CPU ist jetzt schon nicht ausgelastet, eine schnellere wird nun weniger ausgelastet sein, die Geschwindigkeit Seiten zu laden ändert sich hier nicht.
+2. Hilft auch nicht, Speicherplatz ist kein Problem, Problem ist die Geschwindigkeit.
+	1. Ihr könnt euch vorstellen: Wenn unser Seiten Objekte in einem Lager sind, und die Tür ist so groß wie eine normale Tür, wenn w 

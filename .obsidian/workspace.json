@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dd0b69d8c2e5d253",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BuS/Tutorium_06.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "91f9c44b2bdc7656",
             "type": "leaf",
             "state": {
@@ -31,8 +19,25 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "71fda9f82296eef8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9dbf69022fc8f15b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BuS/Tutorium_07.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,10 +190,10 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "91f9c44b2bdc7656",
+  "active": "9dbf69022fc8f15b",
   "lastOpenFiles": [
-    "BuS/Tutorium_01.md",
     "BuS/Tutorium_07.md",
+    "BuS/Tutorium_01.md",
     "BuS/Tutorium_06.md",
     "Abgaben Tracker.md",
     "Pasted image 20230607223636.png",
