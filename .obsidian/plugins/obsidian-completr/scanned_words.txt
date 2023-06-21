@@ -198,6 +198,7 @@ ADDif
 ADDDDDDDN
 ADD
 Allgemeines
+Anfragen
 VL
 Variabelen
 Vorwissen
@@ -310,6 +311,8 @@ VLw
 VcBX
 Verspätung
 Vermeiden
+Vorschläge
+Verringerung
 ggf
 gleichzeitig
 gleichzeitige
@@ -444,6 +447,10 @@ gRe
 gZEV
 geschieht
 ggfs
+gut
+größeren
+größer
+größere
 TU
 Tutorium
 Tastatur
@@ -542,6 +549,7 @@ TcJ
 TE
 Tut
 Thema
+Tür
 BuS
 Benutzer
 Betriebssystemgrundlagen
@@ -659,6 +667,7 @@ BO
 BBB
 Blatt
 Behandlungsroutine
+Begründung
 Email
 Eingebettet
 Ereignissen
@@ -772,6 +781,7 @@ Ewu
 Ed
 EZH
 Einsicht
+Erhöhung
 DB
 Dbis
 Die
@@ -888,6 +898,7 @@ DSAL
 Dieses
 Daten
 Demand
+Disk
 Übung
 ÜB
 Übungsblatt
@@ -1044,6 +1055,8 @@ Sly
 Sy
 STF
 Seitenfehler
+Speicherplatz
+Schuhe
 UE
 Unix
 UNIX
@@ -1295,6 +1308,8 @@ MjU
 MIh
 MI
 MDDDDDDDN
+Modus
+Mehr
 Gruppen
 Ggf
 Geräte
@@ -1582,6 +1597,8 @@ em
 etwas
 exisitert
 einiges
+eigentlich
+erhöhen
 week
 wegen
 werden
@@ -1713,6 +1730,7 @@ wNb
 wUv
 wMp
 wNN
+weniger
 Quiz
 Qo
 QN
@@ -1878,6 +1896,7 @@ ktD
 kVs
 komplex
 konnten
+kein
 nur
 nacheinander
 nötig
@@ -1970,6 +1989,7 @@ nP
 nfO
 nötigen
 nachgeladen
+normale
 Prozess
 Prozesse
 Programmcounter
@@ -2060,6 +2080,7 @@ PI
 Pz
 Platz
 Physikalisch
+Programme
 ausführern
 ausführung
 abfolge
@@ -2180,6 +2201,10 @@ aCIiM
 aLL
 ausführlicher
 ausgeführten
+ausgelagert
+auszulasten
+abzuarbeiten
+automatisch
 von
 vor
 vorher
@@ -2301,6 +2326,8 @@ vB
 verhindert
 vortritt
 verbringen
+virtueller
+vorstellen
 mehreren
 mehrere
 man
@@ -2590,6 +2617,8 @@ Ib
 IDp
 Ia
 IZl
+Installation
+Ihr
 lassen
 le
 lediglich
@@ -2684,6 +2713,8 @@ lhh
 leid
 legen
 lokalisiert
+laufender
+laden
 Ziel
 Zunächst
 Zuständen
@@ -2779,6 +2810,7 @@ Zw
 Zm
 ZJ
 ZYg
+Zugri
 ist
 im
 in
@@ -2870,6 +2902,7 @@ iEM
 iJQ
 iiM
 iaFGtwK
+iii
 schnelle
 so
 sind
@@ -2995,6 +3028,9 @@ seJ
 sG
 sDDDDD
 schlafen
+sonstigen
+schnelleren
+schnellere
 höhen
 hat
 hergestellt
@@ -3093,6 +3129,7 @@ hQO
 hZ
 ha
 habe
+hilft
 Rechen
 Routine
 Register
@@ -3264,6 +3301,7 @@ uQQ
 uS
 uuOO
 upp
+unser
 Wechselgeschwindigkeit
 Wenn
 Welt
@@ -3634,6 +3672,7 @@ fY
 fw
 fiU
 fJ
+funktionieren
 Kontext
 Kommunikation
 Kontrolle
@@ -3891,6 +3930,7 @@ HLD
 Hpp
 Hdd
 Handler
+Hilft
 counter
 close
 cG
@@ -4192,6 +4232,7 @@ Lk
 LTT
 Ll
 Logisch
+Lager
 tatsächliche
 tun
 tritt
@@ -4879,4 +4920,5 @@ yFu
 äzfW
 ändern
 är
+ändert
 Ästen
