@@ -69,8 +69,11 @@ vi) Installation einer schnelleren Festplatte
 title: Zusammenfassung
 unten ist eine Wand Text, hier ist eine kleine Zusammenfassung:
 Wir wollen Seiten laden, es gibt insgesamt 7 Seiten [0,1,2,3,4,5,6]
-```
+Wir haben begrenzt Anzahl an Plätze im Hauptspeicher (4 Rahmen)
+Also wir können nicht alle Seiten gleichzeitig einfach laden, wir wissen nun welche als nächstes geladen werden muss, müssen jedoch entscheiden welche wir rausschmeißen wollen
 
+Ihr könnt entweder die Beschreibungen der Strategien hier lesen in der Frage, oder direkt unten zur Lösung gehen, da sind Erklärungen im eigenen Stil
+```
 
 
 In der Vorlesung haben Sie das Prinzip des Pagings kennengelernt: der Adressraum eines Prozesses wird in Seiten (Pages) fester Größe eingeteilt, der Hauptspeicher in Rahmen der gleichen Gröÿe, welche jeweils eine Seite aufnehmen können. Die Zahl der Rahmen im Hauptspeicher ist im Allgemeinen kleiner als die Anzahl der tatsächlich im System existierenden Seiten. Seiten, die gerade nicht im Hauptspeicher gehalten werden können, werden auf ein externes Speichermedium ausgelagert. Befindet sich eine Seite nicht im Hauptspeicher, wenn auf sie zugegriffen werden soll, muss sie zuvor vom externen Speicher in den Hauptspeicher geladen werden (Seitenfehler, Page Fault). Sind noch nicht alle Rahmen im Hauptspeicher gefüllt, stellt dies kein Problem dar. Ist jedoch kein Platz mehr vorhanden, muss eine Seite im Hauptspeicher ausgewählt werden, die ausgelagert und durch die neue Seite ersetzt wird. Für die Auswahl der zu ersetzenden Seite gibt es verschiedene Strategien, unter anderem:
@@ -89,3 +92,8 @@ In der Vorlesung haben Sie das Prinzip des Pagings kennengelernt: der Adressraum
 Seitenzugriffe werden hier als Referenzstring angegeben, welcher die zeitliche Reihenfolge der angeforderten Seiten enthält. Ein solcher String ist z.B. ω = 0 1 2 3 4 1 5 5 2 4 5 1 1 0 6 2 5 2 3 5 : Erst erfolgt ein Zugriff auf Seite 0, dann auf Seite 1, dann auf Seite 2 usw.. Seitennummern seien hier immer einstellig.
 
 Gegeben sei ein System mit vier Rahmen, die zu Beginn leer sind. Geben Sie für jede der oben aufgeführten Strategien die Belegung dieser vier Rahmen nach jedem Seitenzugriff sowie die Anzahl der auftretenden Seitenfehler an. Legen Sie dabei den oben angegebenen Referenzstring zugrunde.
+
+Sollten beim Laden einer Seite noch mehrere Rahmen frei sein, belegen Sie immer den Rahmen mit der niedrigsten Nummer. Ist kein Rahmen mehr frei, ersetzen Sie jeweils eine Seite entsprechend der verwendeten Strategie.
+Dabei sollen die Felder "Priorität" der Unterstützung und Übersichtlichkeit bei der Erstellung der Rahmenbelegung dienen (füllen Sie sie auf jeden Fall auch aus). Diese Felder entsprechen der Liste, die das Betriebssystem verwaltet, um zu entscheiden, in welcher Reihenfolge bereits geladene Seiten ausgetauscht werden. Wird z.B. bei FIFO als erstes Seite 5 geladen, so ist Priorität 1 5 und die anderen Felder sind leer. Wird im zweiten Schritt 7 geladen, so ist Priorität 1 7, Priorität 2 5 und die anderen Felder sind leer. Der Wert in Priorität 4 gibt also die Seite an, die beim nächsten Seitenfehler ausgetauscht wird. Halten Sie in diesem Feld auch das A-Bit für SC und und den Häugkeitszähler für LFU nach.
+Die einzige Ausnahme bei der Sortierung der Prioritätenliste soll bei LFU gemacht werden: verwenden Sie wie bei FIFO nur das Alter der Seiten als Sortierkriterium. Dies führt zwar dazu, dass  je nach Ständen der Häugkeitszähler  die zu verdrängende Seite nicht immer in Priorität 4 steht sondern ggfs. über den zusätzlichen Zähler entschieden werden muss, macht aber das Beibehalten der korrekten Reihenfolge bei der Änderung von Zählerständen einfacher. Im Feld Seitenfehler markieren sie mit einem X, wenn in diesem Schritt ein Seitenfehler aufgetreten
+ist und eine Seite ausgetauscht wurde.
