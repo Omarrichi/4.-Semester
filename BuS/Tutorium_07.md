@@ -162,6 +162,19 @@ Wir haben diese Strategie hier, damit ihr sieht, dass keiner von den anderen wir
 **Allgemin:**
 Hier wird nur das Vorgehen für die Aufgabe beschrieben mehr zum Thema Lifetime-Function ist auf Folie V-84
 
+```ad-note
+- Wenn wir eine bekannte String haben, dann können wir Tests durchführen, indem wir Rahmen zuweisen, fangen bei einem Rahmen, und gehen bis 10 Rahmen. 
+- Nun ermitteln wir so, wie viele Seitenfehler wir bei jedem Rahmenanzahl haben.
+- Jetzt können wir die mittlere Zeit zwischen zwei Seitenfehler für jeden Rahmenanzahl rausfinden.
+	- wir teilen die Dauer der Ausführung des Referenzstrings durch die Anzahl der Seitenfehler.
+		- Hier wird jede Anfrage als eine Zeiteinheit betrachtet, unser String hat die die Länge 26, also wir Teilen 26 durch die Seitenfehler Anzahl bei jede Rahmenzahl
+- Das Ergeniss der Division ist dann $L(m)$
+	- diese Tragen wir in der Diagramm, und legen unsere Tangente
+- Die Tangent ist bei (0,1), diese lassen wir dann einfach nach rechts fallen, bis sie bei einem Punkt ankommt, Die Rahmengröße für diesen Punkt, ist dann unsere Optimale Rahmengröße
+
+```
+
+
 
 Gesucht wird die Lifetime-Funktion $L(m)$ zu einem Programm, das durch den Referenzstring $\omega$ mit
 
