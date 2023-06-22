@@ -141,5 +141,14 @@ A-Bit halten wir als Index bei jeder Seite.
 Index hier ist die Anzahl der Nutzungen
 - CLIMB:
 	- Wichtig: Neue Seite hier ist älteste *nicht* Jüngste
-	- Analog zur LRU, Unterscheid ist,  
-- Optimal
+	- Analog zur LRU, Unterscheid ist, wenn eine Seite benutzt wird, wird sie nicht als jüngste vermerkt, sondern "jünger" also sie geht eine stelle höher nur (sie klettert eine Stelle hoch)
+	- Hier wird wieder einfach die älteste Seite verdrängt.
+
+![[Pasted image 20230622133509.png]]
+
+- Optimal:
+	- Unser Ziel ist diese Strategie zu haben, jedoch diese Strategie setzt voraus, dass wir welche Seiten angefragt werden wissen. Dies ist bei dieser Aufgabe möglich jedoch in der Realität nicht. Wir wissen nicht welche Seite als nächstes angefragt wird, deswegen haben wir mehrere Strategien. Diese helfen uns eine Approximation zu haben.
+	- Wir gucken bei dieser Strategie auf unseren String in einem bestimmten Intervall, und verdrängen die Seite, die in diesen kommenden Intervall nicht angefragt wird.
+	- diese folgt aus dem Working-Set-Prinzip und Lokalitätsprinzip
+		- wir nehmen uns also ein Teil des Strings und arbeiten damit
+	- Die anderen Strategien arbeiten auch natürlich ähnlich, (SC, LFU, LRU) jedoch übernehmen sie ihre Werte aus vergangenen Anfragen, hier gucken wir nach vorne
