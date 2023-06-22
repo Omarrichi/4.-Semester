@@ -208,4 +208,57 @@ Da diese Tabellen tatsächlich eher als Hilfe gedacht sind und nicht für die Au
 	- bei Rahmen 7,8,9,10: 6 Pagefaults
 - Jetzt habe wir fast die hälfte abgedeckt, ohne eine einzige Tabelle
 - Weiterhin können wir für Rahmen 1 auch ohne Tabelle zählen:
-	- Bei einem Rahmen werden wir jedes mal die Seite verdränge, es sei, die gleiche Seite wird zwei mal hintereinander ausgeführt
+	- Bei einem Rahmen werden wir jedes mal die Seite verdrängen, es sei, die gleiche Seite wird zwei mal hintereinander ausgeführt. 
+	- Hier ist das nicht der Fall, keine Seite kommt direkt zwei mal vor, also wir haben für jede Anfrage einen Page Fault
+	- 26 Anfragen = 26 Page Faults
+
+also haben wir jetzt folgendes:
+
+| Rahmengröße | Page Fault |
+|:-----------:|:----------:|
+|      1      |     26     |
+|      2      |            |
+|      3      |            |
+|      4      |            |
+|      5      |            | 
+|      6      |     6      |
+|      7      |     6      |
+|      8      |     6      |
+|      9      |     6      |
+|     10      |     6      |
+
+Wenn ihr geschickt seid, könnt ihr weiterhin ohne Tabelle die 2 und vielleicht auch die 3 machen, das ist aber bei LFU etwas komplex, deswegen würde man für den Rest Tabellen erstellen. Als Übung könnt ihr gerne dies machen, im folgenden könnt ihr dann die Anzahl an PF vergleichen
+
+| Rahmengröße | Page Fault |
+|:-----------:|:----------:|
+|      1      |     26     |
+|      2      |     22     |
+|      3      |     21     |
+|      4      |     13     |
+|      5      |     9      |
+|      6      |     6      |
+|      7      |     6      |
+|      8      |     6      |
+|      9      |     6      |
+|     10      |     6      |
+
+Jetzt können wir endlich die Aufgabe machen :) .
+
+Wir rechnen $L(m)$.
+
+$m = 1 , L(m) = \frac{26}{PF} = \frac{26}{26} = 1$
+$m = 2 , L(m) = \frac{26}{22} = 1,18$
+$m = 3 , L(m) = \frac{26}{21} = 1,23$
+$m = 4 , L(m) = \frac{26}{13} = 2$
+$m = 5 , L(m) = \frac{26}{9} = 2,88$
+$m = 6 , L(m) = \frac{26}{6} = 4,33$
+$m = 7 , L(m) = \frac{26}{6} = 4,33$
+$m = 8 , L(m) = \frac{26}{6} = 4,33$
+$m = 9 , L(m) = \frac{26}{6} = 4,33$
+$m = 10 , L(m) = \frac{26}{6} = 4,33$
+
+Nun tragen wir diese Werte in unserem Diagramm ein:
+
+![[Pasted image 20230622142318.png]]
+
+Dazu zeichnen wir die Tangente (0,1) und
