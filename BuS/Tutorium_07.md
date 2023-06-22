@@ -112,4 +112,24 @@ Wichtig hier bei allen Strategien, wenn eine Seite verdrängt wird, werden die R
 
 - LRU (Least Recently Used): 
 	- Identisch zur FIFO mit dem einzigen Unterschied:
-	- Falls eine Seite im Hauptspeicher ist, bzw. Falls 
+	- Falls eine Seite im Hauptspeicher ist, bzw. Falls kein Page Fault vorliegt, wird die angefragte Seite als jüngste vermerkt.
+	- Die älteste wird ausgelagert
+
+![[Pasted image 20230622131437.png]]
+
+- SC (Second Chance):
+	- Fast so wie LRU, falls die angefragte Seite schon vorhanden ist, dann wird sie nicht direkt als jüngste vermerkt, sondern ihr A-Bit wird gesetzt (also auf 1).
+	- Wenn wir eine Seite verdrängen müssen, jedoch die älteste hat ihr A-Bit gesetzt, dann bekommt diese Seite eine zweite Chance. 
+	- (hier analog zu LRU), die Seite verliert ihren A-Bit und wird als jüngste vermerkt, danach wird die zweit älteste Seite untersucht, falls sie kein A-Bit gesetzt hat, dann wird sie verdrängt, falls ja dann läuft es analog wie bei der ersten Seite.
+	- Also diese Strategie ist LRU mit einem zwischen Schritt, und mehrere Seiten gleichzeitig, können ihr A-Bit gesetzt haben.
+	- Wichtig hier auch:
+		- Falls eine Seite A-Bit verliert und jung wird bekommt sie Prio 1, aber sie wird um eine Stelle nachunten verdrängt da das Laden von der angefragte Seite erst danach passiert, also bekommt unser A-Bit Verlierer Platz 2, und neue Seite bekommt Platz 1.
+
+![[Pasted image 20230622132258.png]]
+A-Bit halten wir als Index bei jeder Seite.
+
+- LFU (Least Frequently Used):
+
+
+- CLIMB:
+- Optimal
