@@ -129,7 +129,17 @@ Wichtig hier bei allen Strategien, wenn eine Seite verdrängt wird, werden die R
 A-Bit halten wir als Index bei jeder Seite.
 
 - LFU (Least Frequently Used):
+	- Etwas komplex, neue Seiten werden als jüngsten vermerkt (wie FIFO).
+	- Jede Seite bekommt einen Zähler, jedes mal wenn die Seite angefragt wird, erhöht sich dieser Zähler.
+	- Wenn wir uns entscheiden müssen welche Seite verdrängt werden muss dann:
+		- wir nehmen die Seite die den niedrigsten Zähler hat
+		- Falls mehrere den Minimum besitzen, dann nehmen wir die ältere Seite raus.
+	- Falls eine Seite verdrängt wird, und dann erneut Angefragt wird, fängt ihr Zähler erneut von 0 an
+	- Hier ist es euch überlassen ob ihr bei 0 oder 1 anfangen wollt zu zählen, Hauptsache es bleibt gleich.
 
-
+![[Pasted image 20230622133106.png]]
+Index hier ist die Anzahl der Nutzungen
 - CLIMB:
+	- Wichtig: Neue Seite hier ist älteste *nicht* Jüngste
+	- Analog zur LRU, Unterscheid ist,  
 - Optimal
