@@ -1,4 +1,4 @@
-21.06.2023 - Omar Richi (omar.richi@rwth-aachen.de)
+19.06.2023 - Omar Richi (omar.richi@rwth-aachen.de)
 
 Tut mir leid für die Verspätung, da aber das Thema etwas komplex sein kann, und viele wegen DSAL Einsicht nicht da seien konnten, habe ich mich entscheiden die Notizen ausführlicher zu machen.
 
@@ -33,7 +33,7 @@ Das System ist nicht optimal implementierbar, da man nicht wissen kann, wann wel
 Gegeben sei ein Demand-Paging-System, das aktuell wie folgt ausgelastet ist:
 
 - CPU-Auslastung: 20%
-- Auslastung des Zugris auf die Paging-Disk (d.h. die Festplatte, auf die der virtueller Speicher ausgelagert ist): 97,7%
+- Auslastung des Zugriffs auf die Paging-Disk (d.h. die Festplatte, auf die der virtueller Speicher ausgelagert ist): 97,7%
 - Auslastung der sonstigen I/O-Geräte: 5%
 
 Ziel sollte aber eigentlich sein, die CPU so gut wie möglich auszulasten, um alle Programme schnell abzuarbeiten! Geben Sie für jeden der folgenden Vorschläge mit Begründung an, ob er sich eignen
@@ -72,7 +72,7 @@ Wir wollen Seiten laden, es gibt insgesamt 7 Seiten [0,1,2,3,4,5,6]
 Wir haben eine begrenzte Anzahl an Plätze im Hauptspeicher (4 Rahmen)
 Also wir können nicht alle Seiten gleichzeitig einfach laden, wir wissen nun welche als nächstes geladen werden muss, müssen jedoch entscheiden welche wir rausschmeißen wollen
 
-Liest euch die Beschreibungen der Strategien aus der Frage, bei der Lösung findet ihr auch eine kurze Erklärung.
+Liest euch die Beschreibungen der Strategien aus der Frage, bei der Lösung findet ihr auch eine  Erklärung.
 ```
 
 
@@ -167,7 +167,7 @@ Hier wird nur das Vorgehen für die Aufgabe beschrieben mehr zum Thema Lifetime-
 - Nun ermitteln wir so, wie viele Seitenfehler wir bei jedem Rahmenanzahl haben.
 - Jetzt können wir die mittlere Zeit zwischen zwei Seitenfehler für jeden Rahmenanzahl rausfinden.
 	- wir teilen die Dauer der Ausführung des Referenzstrings durch die Anzahl der Seitenfehler.
-		- Hier wird jede Anfrage als eine Zeiteinheit betrachtet, unser String hat die die Länge 26, also wir Teilen 26 durch die Seitenfehler Anzahl bei jede Rahmenzahl
+		- Hier wird jede Anfrage als eine Zeiteinheit betrachtet, unser String hat  die Länge 26, also wir Teilen 26 durch die Seitenfehler Anzahl bei jede Rahmenzahl
 - Das Ergeniss der Division ist dann $L(m)$
 	- diese Tragen wir in der Diagramm, und legen unsere Tangente
 - Die Tangent ist bei Punkt (0,1), diese lassen wir dann einfach nach rechts fallen, bis sie bei einem Punkt ankommt, Die Rahmengröße für diesen Punkt, ist dann unsere Optimale Rahmengröße
@@ -189,9 +189,10 @@ Welche optimale Einstellung der Speichergröße ergibt sich bei Anwendung des pr
 Nutzt Linux dieses Konzept? Warum oder warum nicht?
 
 **Lösung:**
+
 Gegeben: 
 - Referenzstring: $\omega = 2 \space 3\space 5\space 3\space 1\space 4\space 2\space 3\space 1\space 5\space 2\space 3\space 4\space 0\space 5\space 1\space 4\space 0\space 3\space 2\space 5\space 1\space 2\space 5\space 2\space 1\space$
-- Rahmen von 1 bis 10
+- Rahmen m von 1 bis 10
 - Strategie: LFU
 
 Als nächstes würde man hier tatsächlich 10 Tabellen erstellen müssen, damit man weiß wie viele Seitenfehler wir haben. Tabelle 1 hat nur einen Rahmen, Tabelle 2 2 Rahmen, Tabelle 5 5 Rahmen usw..
@@ -265,4 +266,10 @@ Dazu zeichnen wir die Tangente $(0,1)$ und lassen sie fallen, sie kommt dann an 
 
 Also unsere Optimale Speichergröße bzw. Rahmengröße ist 6
 
-Sowas wird aber in Linux nicht eingesetzt, da wir nicht einmalig die Werte rechnen können, diese Werte ändern sich stets, deswegen müssen wir die Werte ständig neu ermitteln. Wir wissen auch gar nicht in welcher Reihenfolge die Seiten angefragt werden, also ist es nicht nur aufwändig, sondern auch so gut wie unmöglich
+Sowas wird aber in Linux nicht eingesetzt, da wir nicht einmalig die Werte rechnen können, diese Werte ändern sich stets, deswegen müssen wir die Werte ständig neu ermitteln. Wir wissen auch gar nicht in welcher Reihenfolge die Seiten angefragt werden, also ist es nicht nur aufwändig, sondern auch so gut wie unmöglich.
+
+Stattdessen haben wir in Linux PFF, wir geben einem Prozess immer einen festen wert an Rahmen. Während der Lebenszeit dieses Prozesses berechnen wir dann die Seitenfehlerrate, wird sie zu hoch, dann teilen wir weitere Rahmen zu, damit wir diese absenken, falls es sehr niedrig ist, und andere Prozesse mehr Speicherbenötigen also mehr Rahmen benötigen, dann werden Rahmen abgegeben von diesem Prozess. Wir passen uns also während der Laufzeit an, falls eine Änderung im Programm vorkommt, dann fangen wir erneut, die Situation zu evaluieren, und erneut anzupassen.
+
+```ad-warning
+title: Aufgabe 4 behandelt wir dann nächste Woche
+```
