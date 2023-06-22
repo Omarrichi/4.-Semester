@@ -261,4 +261,8 @@ Nun tragen wir diese Werte in unserem Diagramm ein:
 
 ![[Pasted image 20230622142318.png]]
 
-Dazu zeichnen wir die Tangente (0,1) und
+Dazu zeichnen wir die Tangente $(0,1)$ und lassen sie fallen, sie kommt dann an den Punkt $m = 6$
+
+Also unsere Optimale Speichergröße bzw. Rahmengröße ist 6
+
+Sowas wird aber in Linux nicht eingesetzt, da wir nicht einmalig die Werte rechnen können, diese Werte ändern sich stets, deswegen müssen wir die Werte ständig neu ermitteln. Wir wissen auch gar nicht in welcher Reihenfolge die Seiten angefragt werden, also ist es nicht nur aufwändig, sondern auch so gut wie unmöglich
