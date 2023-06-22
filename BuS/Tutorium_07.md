@@ -69,10 +69,10 @@ vi) Installation einer schnelleren Festplatte
 title: Zusammenfassung
 unten ist eine Wand Text, hier ist eine kleine Zusammenfassung:
 Wir wollen Seiten laden, es gibt insgesamt 7 Seiten [0,1,2,3,4,5,6]
-Wir haben begrenzt Anzahl an Plätze im Hauptspeicher (4 Rahmen)
+Wir haben eine begrenzte Anzahl an Plätze im Hauptspeicher (4 Rahmen)
 Also wir können nicht alle Seiten gleichzeitig einfach laden, wir wissen nun welche als nächstes geladen werden muss, müssen jedoch entscheiden welche wir rausschmeißen wollen
 
-Ihr könnt entweder die Beschreibungen der Strategien hier lesen in der Frage, oder direkt unten zur Lösung gehen, da sind Erklärungen im eigenen Stil
+Liest euch die Beschreibungen der Strategien aus der Frage, bei der Lösung findet ihr auch eine kurze Erklärung.
 ```
 
 
@@ -102,3 +102,14 @@ Im Feld "Seitenfehler" markieren sie mit einem X, wenn in diesem Schritt ein Sei
 ist und eine Seite ausgetauscht wurde.
 
 **Lösung:**
+
+Wichtig hier bei allen Strategien, wenn eine Seite verdrängt wird, werden die Rahmen nicht komplett neu zugeteilt, lediglich übernimmt die neue Seite den Platz der älteren Seiten. Aus diesem Grund führen wir eine zweite Tabelle "Priorität", sodass wir mithalten können welche jetzt als nächstes verdrängt werden soll. Prioritätstabelle, ist in der Regel keine Pflicht, jedoch ist sie extrem hilfreich, ich empfehle euch sie immer mitzuführen, da sie auch Folgefehler ermöglicht.
+
+- FIFO:
+	- Die einfachste Strategie, jede neue Seite wird als jüngste im Hauptspeicher eingelagert, wenn alles voll ist, dann nehmen wir die älteste aus dem Speicher.
+
+![[Pasted image 20230622131130.png]]
+
+- LRU (Least Recently Used): 
+	- Identisch zur FIFO mit dem einzigen Unterschied:
+	- Falls eine Seite im Hauptspeicher ist, bzw. Falls 
