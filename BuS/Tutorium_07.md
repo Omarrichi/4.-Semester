@@ -170,7 +170,7 @@ Hier wird nur das Vorgehen für die Aufgabe beschrieben mehr zum Thema Lifetime-
 		- Hier wird jede Anfrage als eine Zeiteinheit betrachtet, unser String hat die die Länge 26, also wir Teilen 26 durch die Seitenfehler Anzahl bei jede Rahmenzahl
 - Das Ergeniss der Division ist dann $L(m)$
 	- diese Tragen wir in der Diagramm, und legen unsere Tangente
-- Die Tangent ist bei (0,1), diese lassen wir dann einfach nach rechts fallen, bis sie bei einem Punkt ankommt, Die Rahmengröße für diesen Punkt, ist dann unsere Optimale Rahmengröße
+- Die Tangent ist bei Punkt (0,1), diese lassen wir dann einfach nach rechts fallen, bis sie bei einem Punkt ankommt, Die Rahmengröße für diesen Punkt, ist dann unsere Optimale Rahmengröße
 
 ```
 
@@ -189,3 +189,23 @@ Welche optimale Einstellung der Speichergröße ergibt sich bei Anwendung des pr
 Nutzt Linux dieses Konzept? Warum oder warum nicht?
 
 **Lösung:**
+Gegeben: 
+- Referenzstring: $\omega = 2 \space 3\space 5\space 3\space 1\space 4\space 2\space 3\space 1\space 5\space 2\space 3\space 4\space 0\space 5\space 1\space 4\space 0\space 3\space 2\space 5\space 1\space 2\space 5\space 2\space 1\space$
+- Rahmen von 1 bis 10
+- Strategie: LFU
+
+Als nächstes würde man hier tatsächlich 10 Tabellen erstellen müssen, damit man weiß wie viele Seitenfehler wir haben. Tabelle 1 hat nur einen Rahmen, Tabelle 2 2 Rahmen, Tabelle 5 5 Rahmen usw..
+
+Da diese Tabellen tatsächlich eher als Hilfe gedacht sind und nicht für die Aufgabe Pflicht, können wir uns hier etwas Arbeit sparen.
+
+- Wir fangen bei dem einfachen Fall:
+	- Unser String beinhaltet Seiten von 0 bis 5, also insgesamt haben wir 6 Seiten.
+	- Das heißt, wenn wir 6 Rahmen haben, dann können wir tatsächlich alle Seiten Laden, ohne das wir verdrängen müssen.
+		- Nicht vergessen aber, wenn wir die Seiten zum ersten Mal laden, ist es ein Page Fault
+	- Also bei 6 Rahmen, werden wir genau 6 Page Faults haben. Wir laden alle Seiten einmalig, und dann sind wir fertig.
+	- Für die restlichen Rahmen größer 6, ist es analog, wir haben zwar mehr Rahmen, das macht aber keinen Unterscheid für unsere Seiten, sie können geladen werden und müssen nicht verdrängt werden.
+	- Also folgt also:
+	- bei Rahmen 7,8,9,10: 6 Pagefaults
+- Jetzt habe wir fast die hälfte abgedeckt, ohne eine einzige Tabelle
+- Weiterhin können wir für Rahmen 1 auch ohne Tabelle zählen:
+	- Bei einem Rahmen werden wir jedes mal die Seite verdränge, es sei, die gleiche Seite wird zwei mal hintereinander ausgeführt
