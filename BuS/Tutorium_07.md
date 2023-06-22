@@ -89,7 +89,7 @@ In der Vorlesung haben Sie das Prinzip des Pagings kennengelernt: der Adressraum
 **CLIMB:** Wird eine Seite geladen, wird sie als 'älteste' Seite vermerkt. Wie bei FIFO erfolgt stets eine Verdrängung der ältesten Seite. Eine Seite muss sich zuerst bewähren, um länger im Speicher verbleiben zu können: erfolgt ein erneuter Zugriff auf eine Seite, während sie bereits im Speicher ist, wird sie um eine Position verjüngt, also bezüglich ihres Alters mit der nächstjüngeren Seite getauscht.
 
 **OPT (Optimalstrategie):** Diese Strategie ersetzt die Seite, die am längsten nicht mehr benötigt wird. Wird eine Seite in Zukunft gar nicht mehr benötigt, wird sie auf die Stelle mit niedrigster Priorität gesetzt.
-Seitenzugriffe werden hier als Referenzstring angegeben, welcher die zeitliche Reihenfolge der angeforderten Seiten enthält. Ein solcher String ist z.B. ω = 0 1 2 3 4 1 5 5 2 4 5 1 1 0 6 2 5 2 3 5 : Erst erfolgt ein Zugriff auf Seite 0, dann auf Seite 1, dann auf Seite 2 usw.. Seitennummern seien hier immer einstellig.
+Seitenzugriffe werden hier als Referenzstring angegeben, welcher die zeitliche Reihenfolge der angeforderten Seiten enthält. Ein solcher String ist z.B. $\omega$ = 0 1 2 3 4 1 5 5 2 4 5 1 1 0 6 2 5 2 3 5 : Erst erfolgt ein Zugriff auf Seite 0, dann auf Seite 1, dann auf Seite 2 usw.. Seitennummern seien hier immer einstellig.
 
 Gegeben sei ein System mit vier Rahmen, die zu Beginn leer sind. Geben Sie für jede der oben aufgeführten Strategien die Belegung dieser vier Rahmen nach jedem Seitenzugriff sowie die Anzahl der auftretenden Seitenfehler an. Legen Sie dabei den oben angegebenen Referenzstring zugrunde.
 
@@ -152,3 +152,27 @@ Index hier ist die Anzahl der Nutzungen
 	- diese folgt aus dem Working-Set-Prinzip und Lokalitätsprinzip
 		- wir nehmen uns also ein Teil des Strings und arbeiten damit
 	- Die anderen Strategien arbeiten auch natürlich ähnlich, (SC, LFU, LRU) jedoch übernehmen sie ihre Werte aus vergangenen Anfragen, hier gucken wir nach vorne
+
+![[Pasted image 20230622134344.png]]
+
+Wir haben diese Strategie hier, damit ihr sieht, dass keiner von den anderen wirklich in diesen Fall optimal ist, jedoch einige sind besser als andere, und manche sind Implementierungsaufwändiger als andere (LRU oder LFU), deswegen wird eher SC und Clock benutzt, sie sind eine einfache Variante dieser Strategien. In Linux wird eine Variante von Clock benutzt.
+
+### Aufgabe 7.3: Lifetime-Funktion
+
+**Allgemin:**
+Hier wird nur das Vorgehen für die Aufgabe beschrieben mehr zum Thema Lifetime-Function ist auf Folie V-84
+
+
+Gesucht wird die Lifetime-Funktion $L(m)$ zu einem Programm, das durch den Referenzstring $\omega$ mit
+
+$$\omega = 2 \space 3\space 5\space 3\space 1\space 4\space 2\space 3\space 1\space 5\space 2\space 3\space 4\space 0\space 5\space 1\space 4\space 0\space 3\space 2\space 5\space 1\space 2\space 5\space 2\space 1\space$$
+
+
+gekennzeichnet ist. Die Zeit, die zwischen zwei Seitenanfragen vergeht, soll jeweils eine Zeiteinheit betragen. Die Seitenersetzung erfolge mittels LFU. Gehen Sie davon aus, dass das Working Set zu Beginn leer ist. Geben Sie die Zahl der Seitenfehler für $m = 1 \dots 10$ in einer Tabelle an, berechnen Sie für jede Rahmenzahl m die mittlere Zeit zwischen zwei Seitenfehlern und zeichnen Sie den Graphen der Lifetime-Funktion $L(m)$ für $m = 1 \dots 10$.
+
+![[Pasted image 20230622134841.png]]
+
+Welche optimale Einstellung der Speichergröße ergibt sich bei Anwendung des primären Knie-Kriteriums? Zeichnen Sie zusätzlich die zugehörige Gerade in Ihren Graphen ein.
+Nutzt Linux dieses Konzept? Warum oder warum nicht?
+
+**Lösung:**
