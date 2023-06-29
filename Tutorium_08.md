@@ -36,11 +36,27 @@ Festplatte:
 - Umsetzung in Software
 - Instruktionen bzw. Reihenfolge kann beliebig geändert werden, wenn es schneller geht.
 
-*b)*
+
+*Allgemein zur b)*
 - Defragmentierung, ist genau wie es sagt. Wir "lösen" die Fragmente bzw. Segmente unseres Speicher.
 - Wie erwähnt finden Speicherbelegungen in Form von Segmente statt, das heißt jeder Prozess bekommt so viel wie er braucht.
-- Angenommen, wir benutzen dies, und geben unsere Prozesse
+- Angenommen, wir benutzen dies, und geben unsere Prozesse Speicher ab. 
+- Irgendwann terminieren einige dieser Prozesse, und der Belegte Speicher ist dann freigegeben
+- allerdings, entstehen dadurch Lücken unseren Speicher, die eventuell separat nicht groß genug sind für einen neuen Prozess, aber zusammen schon. Deswegen benutzen wir hier Defragmentierung.
+*b)*
+Bei Defragmentierung sortieren wir den Speicher erneut, zwei Gründe warum wir es machen sind:
+1. Lücken schließen
+	1. wie erwähnt Lücken zwischen den Prozessen werden geschlossen, 
+	2. Wir kriegen dann größere Lücken für später.
+2. Zusammenhängender Blöcke können dann zusammen geordnet werden
+	1. Wenn Prozess X einen Block am Anfang vom Speicher hat, und einen zweiten Block in der Mitte, dann wird die Zugriffzeit natürlich höher da man den Start und das Ende von beiden Blöcken speichern muss, und natürlich auch durch den Speicher suchen müssen.
+	2. Außerdem wird dadurch der Verwaltungsaufwand hoher, was wir immer verringern wollen.
+	3. Also hier kommt es dazu, dass wir schnellere Zugriffzeiten haben
+	4. Und Verwaltungsaufwand verringert sich
 
+Warum benutzen wir das in dem Hauptspeicher nicht?:
+- Im H.Speicher benutzen wir eher Paging, Defragmentierung ist eher für Segmente dedacht
+- Arbeit erfolgt 
 ### Aufgabe 8.2: I-Nodes
 
 ![[Pasted image 20230629191614.png]]
