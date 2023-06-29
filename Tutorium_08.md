@@ -169,7 +169,7 @@ Der Kopf kann nach unterschiedlichen Strategien sich bewegen, die in Der Vorlesu
 **Lösung: **
 
 Gegeben:
-- 500 Zylinder, von 0 bis 4999
+- 5000 Zylinder, von 0 bis 4999
 - 2350 Startposition
 - Anfragen: 3500, 4200, 3900, 1900, 2600, 1000, 4700
 
@@ -228,8 +228,23 @@ ii) Festplatte:
 	- Polling ist auch unnötig, da die Anfragen nicht häufig vorkommen würden, aber Polling-Loop selber Zeit verschwindet
 
 *c)*
-
+Ein Zugriff auf den Adressbereich von Memory-mapped I/O bedeutet, dass man auf das entsprechende I/O-Gerät zugreift. 
+- dieser Soll der normale Benutzerprozess nicht können
+	- daher werden diese physikalischen Adressen niemals in den logischen Adressraum eines Benutzerprozesses eingebunden
+- Systemprozesse müssen allerdings auf I/O-Geräte zugreifen
+	- diese können die physikalischen Speicherbereiche auch über ihren logischen Adressraum erreichen.
 
 ### Aufgabe 8.5: DNS
 
 ![[Pasted image 20230629191654.png]]
+
+Hier findet ihr nun den Code zu dieser Aufgabe, es ist vollständig Kommentiert, deswegen werde ich hierfür doch keine Extra PDF / Präsentation machen. Für die letzte Aufgabe aus Blatt 7 findet ihr unten eben den Code, dazu werde ich aber eine extra Datei auf Moodle hochladen (Spätestens morgen also Freitag)
+
+![[Pasted image 20230629210918.png]]
+
+
+---
+
+![[Pasted image 20230629211005.png]]
+![[Pasted image 20230629211017.png]]
+![[Pasted image 20230629211026.png]]
