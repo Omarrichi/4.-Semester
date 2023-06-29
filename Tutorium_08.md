@@ -43,6 +43,9 @@ Festplatte:
 - Angenommen, wir benutzen dies, und geben unsere Prozesse Speicher ab. 
 - Irgendwann terminieren einige dieser Prozesse, und der Belegte Speicher ist dann freigegeben
 - allerdings, entstehen dadurch Lücken unseren Speicher, die eventuell separat nicht groß genug sind für einen neuen Prozess, aber zusammen schon. Deswegen benutzen wir hier Defragmentierung.
+
+![[Pasted image 20230629203335.png]]
+
 *b)*
 Bei Defragmentierung sortieren wir den Speicher erneut, zwei Gründe warum wir es machen sind:
 1. Lücken schließen
@@ -155,9 +158,18 @@ Der Kopf kann nach unterschiedlichen Strategien sich bewegen, die in Der Vorlesu
 - FCFS
 	- First Come First Serve: Die Anfragen werdeneinfach die Reihenfolge nach bearbeitet 
 - SSTF
-	- 
-- SCAN (C-SCAN)
+	- Shortest Seek Time First: Die am nächsten Anfrage zum Kopf wird als nächstes bearbeitet (Ich liebe Deutsch)
+	- Die Kopf sucht also zwischen den Anfragen welche näher ist, und bearbeitet sie, dort sucht er erneut die nächste die im dichtesten zu ihm ist.
+- SCAN (C-SCAN):
+	- Kopf geht von Startposition in einer Richtung und bearbeitet alle Anfragen auf dem weg, erst wenn der Kopf das Ende erreicht dann geht in die anderen Richtung und macht das gleiche bis er die Schreibe erreicht, also Ende von innen, dann wiederholt er das ganze
+	- C-SCAN ist sehr ähnlich, da arbeitet der Kopf nur in einer Richtung, das heißt nachdem er das Ende erreicht hat am Anfang, geht er dann in die andere Richtung, aber *bearbeitet keine Anfragen*, die Bearbeitung erfolgt nur in einer Richtung
 - LOOK (C- LOOK)
+	- Analog zum Scan, die einzige Änderung ist, dass der Kopf hier nicht ganz bis zum Ende der Platte geht, sondern schon beim letzten Anfrage die Richtung wechselt (C-Look ist genau wie C-Scan, Arbeit ist nur in einer Richtung)
+
+**Lösung: **
+
+Gegeben:
+
 
 ### Aufgabe 8.4: I/O-System
 
