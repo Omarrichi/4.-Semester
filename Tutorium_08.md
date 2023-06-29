@@ -101,12 +101,31 @@ Zunächst mal vielleiche eine Veranschaulichung:
 Unsere Nodes stehen in dieser Verbindung zueinander
 ![[Pasted image 20230629200002.png]]
 
-Wir führen die erste Operation
+- Wir führen die erste Operation
 
 ![[Pasted image 20230629200056.png]]
-wir haben einen neuen Directory erzeugt "Inodes", der an /home/bus verbunden ist
+Wir haben einen neuen Directory erzeugt "Inodes", der an /home/bus verbunden ist
 
 ![[Pasted image 20230629200253.png]]
+
+- Zweite Operation:
+- Wir erstellen hier einen Link "ln", dieser Link soll Symbolic Link sein "-s"
+- Der Link verbindet /home/bus/inodes mit /home/bus/inodes/inodes
+
+![[Pasted image 20230629200428.png]]
+
+- Der Pfeil von Inode916 zur Inode612, beschreibt den Link den wir erstellt haben, also wenn man auf Inode916 zugreift, dann landet man bei Eltern-Verzeichnis also Inode612
+
+![[Pasted image 20230629200743.png]]
+
+- Dritte Operation:
+- Wir erstellen erneut einen Link, aber diesmal einen Hardlink, also wir kopieren den I-Node quasi
+- Der Inode ist "Inode370" ("/Bus"), der soll jetzt in  /home/bus/inodes/inodes/inodes/inodes/test2 sein
+	- Mit dem Name / Verweis test2 Also:
+
+![[Pasted image 20230629201030.png]]
+
+- Egal wie oft wir in "/inodes" gehen, gehen wir eine Stufe zurück, also I-Node ist dann an Inode: 612 
 
 ### Aufgabe 8.3: Disk-Scheduling
 
