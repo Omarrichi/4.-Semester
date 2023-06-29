@@ -160,14 +160,14 @@ Wir haben diese Strategie hier, damit ihr sieht, dass keiner von den anderen wir
 ### Aufgabe 7.3: Lifetime-Funktion
 
 **Allgemin:**
-Hier wird nur das Vorgehen für die Aufgabe beschrieben mehr zum Thema Lifetime-Function ist auf Folie V-84
+Hier wird nur das Vorgehen für die Aufgabe beschrieben mehr zum Thema Lifetime-Function ist auf Folie V-84. Könnt auch gerne im Tutorium oder per E-Mail fragen!
 
 ```ad-note
 - Wenn wir eine bekannte String haben, dann können wir Tests durchführen, indem wir Rahmen zuweisen, fangen bei einem Rahmen, und gehen bis 10 Rahmen. 
 - Nun ermitteln wir so, wie viele Seitenfehler wir bei jedem Rahmenanzahl haben.
 - Jetzt können wir die mittlere Zeit zwischen zwei Seitenfehler für jeden Rahmenanzahl rausfinden.
 	- wir teilen die Dauer der Ausführung des Referenzstrings durch die Anzahl der Seitenfehler.
-		- Hier wird jede Anfrage als eine Zeiteinheit betrachtet, unser String hat  die Länge 26, also wir Teilen 26 durch die Seitenfehler Anzahl bei jede Rahmenzahl
+		- Hier wird jede Anfrage als eine Zeiteinheit betrachtet, unser String hat die Länge 26, also wir Teilen 26 durch die Seitenfehlerznzahl bei jede Rahmenanzahl
 - Das Ergeniss der Division ist dann $L(m)$
 	- diese Tragen wir in der Diagramm, und legen unsere Tangente
 - Die Tangent ist bei Punkt (0,1), diese lassen wir dann einfach nach rechts fallen, bis sie bei einem Punkt ankommt, Die Rahmengröße für diesen Punkt, ist dann unsere Optimale Rahmengröße
@@ -205,9 +205,9 @@ Da diese Tabellen tatsächlich eher als Hilfe gedacht sind und nicht für die Au
 		- Nicht vergessen aber, wenn wir die Seiten zum ersten Mal laden, ist es ein Page Fault
 	- Also bei 6 Rahmen, werden wir genau 6 Page Faults haben. Wir laden alle Seiten einmalig, und dann sind wir fertig.
 	- Für die restlichen Rahmen größer 6, ist es analog, wir haben zwar mehr Rahmen, das macht aber keinen Unterscheid für unsere Seiten, sie können geladen werden und müssen nicht verdrängt werden.
-	- Also folgt also:
+	- Folgt also:
 	- bei Rahmen 7,8,9,10: 6 Pagefaults
-- Jetzt habe wir fast die hälfte abgedeckt, ohne eine einzige Tabelle
+- Jetzt habe wir  die hälfte abgedeckt, ohne eine einzige Tabelle
 - Weiterhin können wir für Rahmen 1 auch ohne Tabelle zählen:
 	- Bei einem Rahmen werden wir jedes mal die Seite verdrängen, es sei, die gleiche Seite wird zwei mal hintereinander ausgeführt. 
 	- Hier ist das nicht der Fall, keine Seite kommt direkt zwei mal vor, also wir haben für jede Anfrage einen Page Fault
@@ -268,7 +268,7 @@ Also unsere Optimale Speichergröße bzw. Rahmengröße ist 6
 
 Sowas wird aber in Linux nicht eingesetzt, da wir nicht einmalig die Werte rechnen können, diese Werte ändern sich stets, deswegen müssen wir die Werte ständig neu ermitteln. Wir wissen auch gar nicht in welcher Reihenfolge die Seiten angefragt werden, also ist es nicht nur aufwändig, sondern auch so gut wie unmöglich.
 
-Stattdessen haben wir in Linux PFF, wir geben einem Prozess immer einen festen wert an Rahmen. Während der Lebenszeit dieses Prozesses berechnen wir dann die Seitenfehlerrate, wird sie zu hoch, dann teilen wir weitere Rahmen zu, damit wir diese absenken, falls es sehr niedrig ist, und andere Prozesse mehr Speicherbenötigen also mehr Rahmen benötigen, dann werden Rahmen abgegeben von diesem Prozess. Wir passen uns also während der Laufzeit an, falls eine Änderung im Programm vorkommt, dann fangen wir erneut, die Situation zu evaluieren, und erneut anzupassen.
+Stattdessen haben wir in Linux PFF (Page Fault Frequency Folie V-87), wir geben einem Prozess immer einen festen wert an Rahmen. Während der Lebenszeit dieses Prozesses berechnen wir dann die Seitenfehlerrate, wird sie zu hoch, dann teilen wir weitere Rahmen zu, damit wir diese absenken, falls es sehr niedrig ist, und andere Prozesse mehr Speicherbenötigen also mehr Rahmen benötigen, dann werden Rahmen abgegeben von diesem Prozess. Wir passen uns also während der Laufzeit an, falls eine Änderung im Programm vorkommt, dann fangen wir erneut, die Situation zu evaluieren, und erneut anzupassen.
 
 ```ad-warning
 title: Aufgabe 4 behandelt wir dann nächste Woche
