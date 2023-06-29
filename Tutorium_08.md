@@ -123,13 +123,38 @@ Wir haben einen neuen Directory erzeugt "Inodes", der an /home/bus verbunden ist
 - Der Inode ist "Inode370" ("/Bus"), der soll jetzt in  /home/bus/inodes/inodes/inodes/inodes/test2 sein
 	- Mit dem Name / Verweis test2 Also:
 
-![[Pasted image 20230629201030.png]]
+![[Pasted image 20230629201338.png]]
 
+- Wir erhöhen den HL Count auf zwei, da jetzt zwei I-Nodes auf 370 zeigen
 - Egal wie oft wir in "/inodes" gehen, gehen wir eine Stufe zurück, also I-Node ist dann an Inode: 612 
+
+![[Pasted image 20230629201444.png]]
+
+*Beachtet bitte, die Bäume sind nur von mir zur Veranschaulichung, ich finde es sehr leicht sich dadrin zu verlieren. Sie sind also NICHT Teil der Lösung, und werden von euch nicht erwartet.*
 
 ### Aufgabe 8.3: Disk-Scheduling
 
 ![[Pasted image 20230629191626.png]]
+
+*Allgemein:*
+Eine Festplatte hat:
+- Eine drehbare Scheibe
+- Schreib-/ Lesekopf
+
+Wie schnell gelesen wird, wird entschieden durch: 
+- Wo der Head sich gerade befindet
+- Rotation der Scheiben bis zweiten Sektor
+	- Sektoren sind dort wo der Kopf liest
+
+Wichtig ist auch:
+- Wie der Kopf sich bewegt
+- Wir haben gesagt, dass die Reihenfolge der Anfragen nicht eingehalten werden muss, wenn es schneller gehen kann, also wenn man schneller alle Anfragen beantworten kann.
+
+Der Kopf kann nach unterschiedlichen Strategien sich bewegen, die in Der Vorlesung kamen sind:
+
+- FCFS
+- SSTF
+- S
 
 ### Aufgabe 8.4: I/O-System
 
