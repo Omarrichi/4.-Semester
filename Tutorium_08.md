@@ -153,8 +153,11 @@ Wichtig ist auch:
 Der Kopf kann nach unterschiedlichen Strategien sich bewegen, die in Der Vorlesung kamen sind:
 
 - FCFS
+	- First Come First Serve: Die Anfragen werdeneinfach die Reihenfolge nach bearbeitet 
 - SSTF
-- S
+	- 
+- SCAN (C-SCAN)
+- LOOK (C- LOOK)
 
 ### Aufgabe 8.4: I/O-System
 
