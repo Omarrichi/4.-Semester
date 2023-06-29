@@ -89,6 +89,25 @@ Gegeben:
 	- Hard Link: Ist hart copy paste, die Datei bzw. I-Node selber wird kopiert und darein getan
 
 Hardlink counter beschreibt hier nicht wie viele Verbindungen ein Node X hat ausgegangen von Node X, sondern wie viele andere Nodes sind mit dem Verbunden, also wie viele andere Nodes Hardlinks haben zu diesen Node
+
+
+**Lösung: ** 
+
+1. mkdir /home/bus/inodes
+2. ln -s /home/bus/inodes /home/bus/inodes/inodes
+3. ln /home/bus/test /home/bus/inodes/inodes/inodes/inodes/test2
+
+Zunächst mal vielleiche eine Veranschaulichung:
+Unsere Nodes stehen in dieser Verbindung zueinander
+![[Pasted image 20230629200002.png]]
+
+Wir führen die erste Operation
+
+![[Pasted image 20230629200056.png]]
+wir haben einen neuen Directory erzeugt "Inodes", der an /home/bus verbunden ist
+
+![[Pasted image 20230629200253.png]]
+
 ### Aufgabe 8.3: Disk-Scheduling
 
 ![[Pasted image 20230629191626.png]]
