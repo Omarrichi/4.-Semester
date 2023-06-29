@@ -169,11 +169,41 @@ Der Kopf kann nach unterschiedlichen Strategien sich bewegen, die in Der Vorlesu
 **Lösung: **
 
 Gegeben:
+- 500 Zylinder, von 0 bis 4999
+- 2350 Startposition
+- Anfragen: 3500, 4200, 3900, 1900, 2600, 1000, 4700
 
+i) FCFS:  die Reihenfolge nach:
+3500, 4200, 3900, 1900, 2600, 1000, 4700
+
+
+ii) C-SCAN: Wir bewegen den Kopf aufsteigend:
+2600, 3500, 3900, 4200, 4700, *4999, 0*, 1000, 1900
+
+4999, 0, ist unsere Richtungswechsel in der Phase, wo wir nichts bearbeiten.
+
+iii) LOOK: Richtungswechsel erst bei letzten Anfrage, und wir arbeiten in beide Richtungen
+2600, 3500, 3900, 4200, 4700, 1900, 1000
 
 ### Aufgabe 8.4: I/O-System
 
 ![[Pasted image 20230629191641.png]]
+
+*Allgemein:*
+
+Polling vs. Interrupts:
+- Interrupts kennt ihr schon: 
+	- Die CPU bekommt gesagt, wenn irgendwas passiert wo sie unbedingt Zeit für geben muss
+- Polling ist wenn die CPU selber nachguckt ob alles in Ordnung ist, oder ob irgendwas bearbeitet werden soll noch.
+
+Beispiel aus dem Tutorium, ihr habt das bestimmt erlebt:
+(Tutor ist hier die CPU)
+- Wenn ihr eine Frage habt, dann unterbricht ihr den Tutor und *fragt ihn* schnell
+	- Das ist  Interrupt, da er was anders gemacht hat, und eine Frage aus dem nichts kam
+- Wenn aber eine Aufgabe zu Ende ist Zum Beispiel, dann *fragt euch der Tutor* ob ihr Fragen habt.
+	- Das ist dann Polling, da er selber nach "Interrupts gesucht hat" also nach Fragen gesucht hat
+
+
 
 ### Aufgabe 8.5: DNS
 
