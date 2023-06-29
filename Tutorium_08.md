@@ -199,10 +199,35 @@ Polling vs. Interrupts:
 Beispiel aus dem Tutorium, ihr habt das bestimmt erlebt:
 (Tutor ist hier die CPU)
 - Wenn ihr eine Frage habt, dann unterbricht ihr den Tutor und *fragt ihn* schnell
-	- Das ist  Interrupt, da er was anders gemacht hat, und eine Frage aus dem nichts kam
+	- Das ist  Interrupt, da er mit was anders beschäftigt war, und eine Frage kam
 - Wenn aber eine Aufgabe zu Ende ist Zum Beispiel, dann *fragt euch der Tutor* ob ihr Fragen habt.
-	- Das ist dann Polling, da er selber nach "Interrupts gesucht hat" also nach Fragen gesucht hat
+	- Das ist dann Polling, da er selber nach Fragen gesucht hat
 
+**Lösung:**
+
+*a)*
+- Polling ist sinnvoll wenn:
+	- Anfragen häufig vorkommen und nur kurz dauern
+		- mit einem Polling Loop kann man das ganze schnell bearbeiten und zusammenliegen
+		- Man vermeidet Overhead Interrupts, also vermeiden von zu vielen Interrupts
+	- Bei I/O Geräte wo es egal ist ob man etwas warten muss
+		- Drucker Zum Beispiel: es ist relativ egal, ob man jetzt eine Sekunde warten muss bis die Anfrage durch geht
+
+*b)*
+i) Maus:
+- Buffer kann nötig sein
+- hält Mausbewegungen fest, während wichtigere Anfragen bearbeitet werden
+- Interrupt ist hier am besten geeignet
+	- Mausbewegungen können unregelmäßig sein, jedoch sollen sofort bearbeitet werden
+ii) Festplatte:
+- Buffer ist nötig
+	- Die Daten werden auf dem Weg von und zur Festplatte zwischengespeichert
+	- Interrupts ist hier besser geeignet
+		- wir können nicht sagen wann die Dateien fertig geladen / geschrieben sein werden
+		- wir wissen auch nicht, wo der Lese-/ Schreibkopf sich momentan befindet
+	- Polling ist auch unnötig, da die Anfragen nicht häufig vorkommen würden, aber Polling-Loop selber Zeit verschwindet
+
+*c)*
 
 
 ### Aufgabe 8.5: DNS
