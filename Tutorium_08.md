@@ -55,12 +55,40 @@ Bei Defragmentierung sortieren wir den Speicher erneut, zwei Gründe warum wir e
 	4. Und Verwaltungsaufwand verringert sich
 
 Warum benutzen wir das in dem Hauptspeicher nicht?:
-- Im H.Speicher benutzen wir eher Paging, Defragmentierung ist eher für Segmente dedacht
-- Arbeit erfolgt 
+- Im Hauptspeicher benutzen wir eher Paging, Defragmentierung ist eher für Segmente dedacht
+- Arbeit erfolgt mit RAM, also Random Access Memory: also Zugriffe sind in der tat spontan, es gibt keine Suche von vorne nach Hinten
+- Die Belegung im Hauptspeicher ändert sich durchgehend, also es lohnt sich das ganze nicht zu sortieren weil es bleibt wahrscheinlich für nur paar Momente sortiert, bevor die nächste Anfrage schon ankommt
+
+
 ### Aufgabe 8.2: I-Nodes
+
 
 ![[Pasted image 20230629191614.png]]
 
+*Allgemein:*
+Alles in Linux ist eine Datei
+Sogar I/O Geräte sind auch durch Dateien (I-Node) beschrieben
+
+- Index-Nodes: Werden in Unix verwendet
+- Beinhalten Meta-Informationen über Dateisystemeinträge.
+	- I-Node-Nummer
+	- Typ
+	- Hardlinkcount
+	- Zugriffsrechte
+	- Größe der Datei
+	- Position der eigentlichen Dateien im Speicher
+	- etc.
+
+Gegeben:
+- Typen
+	- Directory
+	- File
+	- Symbolic Link
+- Symbolic Link vs Hard Link
+	- Symbolic ist eher eine Art Shortcut: also der beschreibt nur einen Verweis, wo die Datei sich wirklich befindet
+	- Hard Link: Ist hart copy paste, die Datei bzw. I-Node selber wird kopiert und darein getan
+
+Hardlink counter beschreibt hier nicht wie viele Verbindungen ein Node X hat ausgegangen von Node X, sondern wie viele andere Nodes sind mit dem Verbunden, also wie viele andere Nodes Hardlinks haben zu diesen Node
 ### Aufgabe 8.3: Disk-Scheduling
 
 ![[Pasted image 20230629191626.png]]
