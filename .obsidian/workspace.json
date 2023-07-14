@@ -37,32 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Übungsblatt10.md",
-                "mode": "source",
+                "file": "BuS/Tutorium_08.md",
+                "mode": "preview",
                 "source": true
               }
             }
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "71fda9f82296eef8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9dbf69022fc8f15b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Übungsblatt10.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f24c6c34997c9a8b",
@@ -136,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Übungsblatt10.md",
+                "file": "BuS/Tutorium_08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Übungsblatt10.md",
+                "file": "BuS/Tutorium_08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Übungsblatt10.md"
+                "file": "BuS/Tutorium_08.md"
               }
             }
           },
@@ -196,12 +179,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,21 +200,20 @@
   },
   "active": "cc6ead618dee2774",
   "lastOpenFiles": [
+    "Übungsblatt10.md",
+    "BuS/Tutorium_08.md",
     "Pasted image 20230703011226.png",
     "Pasted image 20230703011218.png",
     "Pasted image 20230703011208.png",
     "Pasted image 20230703011149.png",
     "Adobe_Scan_Jul_03_2023.pdf",
-    "Übungsblatt10.md",
     "Pasted image 20230703011108.png",
     "Pasted image 20230703011059.png",
     "exercise10.pdf",
-    "BuS/Tutorium_08.md",
     "Pasted image 20230629211026.png",
     "Pasted image 20230629211017.png",
     "Pasted image 20230629211005.png",
     "Pasted image 20230629210918.png",
-    "Pasted image 20230629203335.png",
     "BuS/Tutorium_07.md",
     "Abgaben Tracker.md",
     "BuS/Tutorium_01.md",
