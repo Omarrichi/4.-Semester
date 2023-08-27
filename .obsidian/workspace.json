@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BuS/Tutorium_06.md",
+                "file": "BuS/Tutorium_04.md",
                 "mode": "preview",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BuS/Tutorium_06.md",
+                "file": "BuS/Tutorium_04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BuS/Tutorium_06.md",
+                "file": "BuS/Tutorium_04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BuS/Tutorium_06.md"
+                "file": "BuS/Tutorium_04.md"
               }
             }
           },
@@ -172,11 +172,13 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "db3700357beff315",
+  "active": "d4be93cbcd14036a",
   "lastOpenFiles": [
+    "BuS/Tutorium_03.md",
+    "BuS/Tutorium_01.md",
+    "BuS/Tutorium_06.md",
     "BuS/Tutorium_07.md",
     "BuS/Tutorium_08.md",
-    "BuS/Tutorium_03.md",
     "Photos/Pasted image 20230703011226.png",
     "Photos/Pasted image 20230703011208.png",
     "Adobe_Scan_Jul_03_2023.pdf",
@@ -187,14 +189,12 @@
     "Photos/Pasted image 20230629200743.png",
     "Photos/Pasted image 20230629201444.png",
     "Photos/Pasted image 20230629201338.png",
-    "BuS/Tutorium_06.md",
     "BuS/Tutorium_05.md",
     "BuS/Tutorium_04.md",
     "Photos/Pasted image 20230629200253.png",
     "Photos/Pasted image 20230629200002.png",
     "Photos/Pasted image 20230703011149.png",
     "Abgaben Tracker.md",
-    "BuS/Tutorium_01.md",
     "fosap.md",
     "Photos",
     "BuS/Tut 1.md",
