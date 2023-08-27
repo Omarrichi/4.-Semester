@@ -4,65 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b8032abb3fb97466",
+        "id": "dd2d99d17afb9169",
         "type": "tabs",
         "children": [
           {
-            "id": "91f9c44b2bdc7656",
+            "id": "d4be93cbcd14036a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BuS/Tutorium_07.md",
-                "mode": "source",
+                "file": "BuS/Tutorium_03.md",
+                "mode": "preview",
                 "source": true
-              }
-            }
-          },
-          {
-            "id": "ffb8c87ea8984a01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BuS/Tutorium_08.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "cc6ead618dee2774",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Photos/Pasted image 20230703011226.png"
-              }
-            }
-          },
-          {
-            "id": "a8542824fcc323ad",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Photos/Pasted image 20230703011218.png"
-              }
-            }
-          },
-          {
-            "id": "cf9495a98bf71f6e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Photos/Pasted image 20230703011208.png"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Photos/Pasted image 20230703011208.png",
+                "file": "BuS/Tutorium_03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Photos/Pasted image 20230703011208.png",
+                "file": "BuS/Tutorium_03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Photos/Pasted image 20230703011208.png"
+                "file": "BuS/Tutorium_03.md"
               }
             }
           },
@@ -215,21 +172,21 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "cf9495a98bf71f6e",
+  "active": "d4be93cbcd14036a",
   "lastOpenFiles": [
-    "Adobe_Scan_Jul_03_2023.pdf",
+    "BuS/Tutorium_07.md",
+    "BuS/Tutorium_08.md",
+    "Photos/Pasted image 20230703011226.png",
     "Photos/Pasted image 20230703011208.png",
+    "Adobe_Scan_Jul_03_2023.pdf",
     "Übungsblatt10.md",
     "exercise10.pdf",
     "Photos/Pasted image 20230703011218.png",
-    "Photos/Pasted image 20230703011226.png",
     "Photos/Pasted image 20230629211017.png",
     "Photos/Pasted image 20230629200743.png",
     "Photos/Pasted image 20230629201444.png",
     "Photos/Pasted image 20230629201338.png",
     "BuS/Tutorium_06.md",
-    "BuS/Tutorium_07.md",
-    "BuS/Tutorium_08.md",
     "BuS/Tutorium_05.md",
     "BuS/Tutorium_04.md",
     "Photos/Pasted image 20230629200253.png",
