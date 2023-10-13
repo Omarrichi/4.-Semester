@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BuS/Tutorium_04.md",
+                "file": "Abgaben Tracker.md",
                 "mode": "preview",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BuS/Tutorium_04.md",
+                "file": "Abgaben Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BuS/Tutorium_04.md",
+                "file": "Abgaben Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BuS/Tutorium_04.md"
+                "file": "Abgaben Tracker.md"
               }
             }
           },
@@ -172,8 +172,9 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "d4be93cbcd14036a",
+  "active": "db3700357beff315",
   "lastOpenFiles": [
+    "BuS/Tutorium_04.md",
     "BuS/Tutorium_03.md",
     "BuS/Tutorium_01.md",
     "BuS/Tutorium_06.md",
@@ -190,7 +191,6 @@
     "Photos/Pasted image 20230629201444.png",
     "Photos/Pasted image 20230629201338.png",
     "BuS/Tutorium_05.md",
-    "BuS/Tutorium_04.md",
     "Photos/Pasted image 20230629200253.png",
     "Photos/Pasted image 20230629200002.png",
     "Photos/Pasted image 20230703011149.png",
